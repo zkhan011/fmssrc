@@ -1,0 +1,15 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile project(':openTCS-API-Injection')
+  compile project(':openTCS-Common')
+  compile group: 'io.netty', name: 'netty-all', version: '4.0.4.Final'
+
+  
+}
+
+task release {
+  dependsOn build
+}

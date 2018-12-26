@@ -1,0 +1,12 @@
+rootProject.name = 'openTCS'
+
+include 'openTCS-API-Base'
+include 'openTCS-API-Injection'
+include 'openTCS-Common'
+include 'openTCS-CommAdapter-Loopback'
+include 'openTCS-Strategies-Default'
+include 'openTCS-Kernel'
+include 'openTCS-KernelControlCenter'
+include 'openTCS-PlantOverview'
+include 'openTCS-Documentation'
+include 'FMS-CommAdapter-AITV'
