@@ -9,6 +9,7 @@ package org.opentcs.virtualvehicle;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.google.inject.assistedinject.Assisted;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,14 +21,18 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import static java.util.Objects.requireNonNull;
+import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import javax.inject.Inject;
 import org.opentcs.common.LoopbackAdapterConstants;
 import org.opentcs.data.ObjectPropConstants;
+import org.opentcs.data.TCSObjectReference;
 import org.opentcs.data.model.Vehicle;
+import org.opentcs.data.order.DriveOrder;
 import org.opentcs.data.order.Route;
 import org.opentcs.drivers.vehicle.AdapterCommand;
 import org.opentcs.drivers.vehicle.BasicVehicleCommAdapter;
@@ -283,7 +288,12 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
     requireNonNull(cmd, "cmd");
     
     
-    System.out.println("I am called");
+  System.out.println("I am called");
+    
+      cmd.getStep().getPath();
+            
+    
+    
     
     try {
       AITVTCPCommunication.sendCommand(this, cmd.toString());
@@ -306,6 +316,9 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
       int multiplier = lsMessage.getMultiplier();
       getProcessModel().setVehiclePaused(multiplier == 0);
     }
+    
+   
+    
   }
 
   @Override
@@ -324,6 +337,8 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
 
   @Override
   public void execute(AdapterCommand command) {
+    
+    System.out.println("I am Executed");
     super.execute(command); //To change body of generated methods, choose Tools | Templates.
   }
 
@@ -427,8 +442,13 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
     @Override
     protected void runActualTask() {
       final MovementCommand curCommand;
+      
+     
+      
+      
       synchronized (AGVCommAdapter.this) {
         curCommand = getSentQueue().peek();
+        
             
       }
       simAdvanceTime = (int) (ADVANCE_TIME * configuration.simulationTimeFactor());
@@ -440,6 +460,23 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
         // If we were told to move somewhere, simulate the journey.
         LOG.debug("Processing MovementCommand...");
         final Route.Step curStep = curCommand.getStep();
+       
+        
+       
+        
+        
+        
+        
+          System.out.println("Called HEre" + getCommandQueue().size());
+         // System.out.println("Called HEre" + vehicle.);
+        
+         
+        
+        
+        
+        
+          
+        
         
         
        
@@ -459,6 +496,9 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
           }
           // Update GUI.
           synchronized (AGVCommAdapter.this) {
+            
+          
+          
             MovementCommand sentCmd = getSentQueue().poll();
             // If the command queue was cleared in the meantime, the kernel
             // might be surprised to hear we executed a command we shouldn't
@@ -489,7 +529,7 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
         return;
       }
       
-        System.out.println(step.getPath().toString());
+        System.out.println();
           
       
       

@@ -565,7 +565,6 @@ public class DriverGUI
         listDisplayPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         add(listDisplayPanel);
-        listDisplayPanel.getAccessibleContext().setAccessibleName("AITV in model");
 
         vehicleDetailPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle.getString("DriverGui.DetailView"))); // NOI18N
         vehicleDetailPanel.setPreferredSize(new java.awt.Dimension(800, 23));

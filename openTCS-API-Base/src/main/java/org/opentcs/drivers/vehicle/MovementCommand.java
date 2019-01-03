@@ -41,6 +41,10 @@ public class MovementCommand {
   /**
    * The step describing the movement.
    */
+  
+ 
+  
+  
   private final Step step;
   /**
    * The operation to be executed after moving.

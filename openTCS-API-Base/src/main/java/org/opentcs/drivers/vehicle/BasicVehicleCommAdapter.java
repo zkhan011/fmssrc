@@ -197,6 +197,8 @@ public abstract class BasicVehicleCommAdapter
     enabled = false;
     // Update the vehicle's state for the rest of the system.
     getProcessModel().setCommAdapterEnabled(false);
+    
+   
     getProcessModel().setVehicleState(Vehicle.State.UNAVAILABLE);
   }
 
@@ -423,6 +425,11 @@ public abstract class BasicVehicleCommAdapter
           }
         }
         if (!isTerminated()) {
+          
+          System.out.println("Called From Basic Vehicle" + getCommandQueue().size());
+          
+          
+          
           curCmd = getCommandQueue().poll();
           if (curCmd != null) {
             try {

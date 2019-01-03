@@ -364,9 +364,11 @@ public class LoopbackCommunicationAdapterPanel
     maxFwdVeloLbl.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
     maxFwdVeloLbl.setText(bundle.getString("maxFwdVelocityLabel")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(18, 6, 0, 0);
     vehiclePropsPanel.add(maxFwdVeloLbl, gridBagConstraints);
 
     maxFwdVeloTxt.setEditable(false);
@@ -376,24 +378,31 @@ public class LoopbackCommunicationAdapterPanel
     maxFwdVeloTxt.setBorder(javax.swing.BorderFactory.createEtchedBorder());
     maxFwdVeloTxt.setEnabled(false);
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.gridheight = 3;
+    gridBagConstraints.ipadx = 55;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(18, 3, 0, 0);
     vehiclePropsPanel.add(maxFwdVeloTxt, gridBagConstraints);
 
     maxFwdVeloUnitLbl.setText("mm/s");
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 5;
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.gridwidth = 4;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
     vehiclePropsPanel.add(maxFwdVeloUnitLbl, gridBagConstraints);
 
     maxRevVeloLbl.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
     maxRevVeloLbl.setText(bundle.getString("maxRevVelocityLabel")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 3;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(9, 6, 0, 0);
     vehiclePropsPanel.add(maxRevVeloLbl, gridBagConstraints);
 
     maxRevVeloTxt.setEditable(false);
@@ -403,28 +412,32 @@ public class LoopbackCommunicationAdapterPanel
     maxRevVeloTxt.setBorder(javax.swing.BorderFactory.createEtchedBorder());
     maxRevVeloTxt.setEnabled(false);
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 3;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.ipadx = 55;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(7, 8, 0, 0);
     vehiclePropsPanel.add(maxRevVeloTxt, gridBagConstraints);
 
     maxRevVeloUnitLbl.setText("mm/s");
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 5;
+    gridBagConstraints.gridy = 3;
+    gridBagConstraints.gridwidth = 8;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(9, 5, 0, 18);
     vehiclePropsPanel.add(maxRevVeloUnitLbl, gridBagConstraints);
 
     maxAccelLbl.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
     maxAccelLbl.setText(bundle.getString("maxAccelerationLabel")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 2;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 6;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(54, 58, 0, 0);
     vehiclePropsPanel.add(maxAccelLbl, gridBagConstraints);
 
     maxAccelTxt.setEditable(false);
@@ -434,18 +447,23 @@ public class LoopbackCommunicationAdapterPanel
     maxAccelTxt.setBorder(javax.swing.BorderFactory.createEtchedBorder());
     maxAccelTxt.setEnabled(false);
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 2;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 6;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.ipadx = 55;
+    gridBagConstraints.ipady = 1;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(52, 3, 0, 0);
     vehiclePropsPanel.add(maxAccelTxt, gridBagConstraints);
 
     maxAccelUnitLbl.setText("<html>mm/s<sup>2</sup>");
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 2;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 3;
+    gridBagConstraints.gridy = 6;
+    gridBagConstraints.gridwidth = 7;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(52, 3, 0, 0);
     vehiclePropsPanel.add(maxAccelUnitLbl, gridBagConstraints);
 
     maxDecelTxt.setEditable(false);
@@ -455,45 +473,51 @@ public class LoopbackCommunicationAdapterPanel
     maxDecelTxt.setBorder(javax.swing.BorderFactory.createEtchedBorder());
     maxDecelTxt.setEnabled(false);
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 3;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 8;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.ipadx = 55;
+    gridBagConstraints.ipady = 1;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(0, 3, 0, 0);
     vehiclePropsPanel.add(maxDecelTxt, gridBagConstraints);
 
     maxDecelLbl.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
     maxDecelLbl.setText(bundle.getString("maxDecelerationLabel")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 3;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 8;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(2, 57, 0, 0);
     vehiclePropsPanel.add(maxDecelLbl, gridBagConstraints);
 
     maxDecelUnitLbl.setText("<html>mm/s<sup>2</sup>");
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 3;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 3;
+    gridBagConstraints.gridy = 8;
+    gridBagConstraints.gridwidth = 7;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(0, 3, 0, 0);
     vehiclePropsPanel.add(maxDecelUnitLbl, gridBagConstraints);
 
     defaultOpTimeLbl.setText(bundle.getString("defaultOperatingTime")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 4;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 10;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(2, 43, 0, 0);
     vehiclePropsPanel.add(defaultOpTimeLbl, gridBagConstraints);
 
     defaultOpTimeUntiLbl.setText("ms");
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 4;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 3;
+    gridBagConstraints.gridy = 10;
+    gridBagConstraints.gridwidth = 3;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(2, 3, 0, 0);
     vehiclePropsPanel.add(defaultOpTimeUntiLbl, gridBagConstraints);
 
     opTimeTxt.setEditable(false);
@@ -503,10 +527,12 @@ public class LoopbackCommunicationAdapterPanel
     opTimeTxt.setBorder(javax.swing.BorderFactory.createEtchedBorder());
     opTimeTxt.setEnabled(false);
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 4;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 10;
+    gridBagConstraints.gridheight = 2;
+    gridBagConstraints.ipadx = 55;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+    gridBagConstraints.insets = new java.awt.Insets(0, 3, 84, 0);
     vehiclePropsPanel.add(opTimeTxt, gridBagConstraints);
 
     PropsPowerInnerContainerPanel.add(vehiclePropsPanel);
