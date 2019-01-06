@@ -29,11 +29,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import javax.inject.Inject;
 import org.opentcs.common.LoopbackAdapterConstants;
+import org.opentcs.components.kernel.Router;
+import org.opentcs.components.kernel.services.TCSObjectService;
 import org.opentcs.data.ObjectPropConstants;
 import org.opentcs.data.TCSObjectReference;
 import org.opentcs.data.model.Vehicle;
 import org.opentcs.data.order.DriveOrder;
 import org.opentcs.data.order.Route;
+import org.opentcs.data.order.TransportOrder;
 import org.opentcs.drivers.vehicle.AdapterCommand;
 import org.opentcs.drivers.vehicle.BasicVehicleCommAdapter;
 import org.opentcs.drivers.vehicle.LoadHandlingDevice;
@@ -53,7 +56,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author zisha
  */
-public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicleCommAdapter{
+public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicleCommAdapter {
 
  /**
    * The name of the load handling device set by this adapter.
@@ -66,7 +69,7 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
   /**
    * The time by which to advance the velocity controller per step (in ms).
    */
-  private static final int ADVANCE_TIME = 100;
+  private static final int ADVANCE_TIME = 500;
   /**
    * This instance's configuration.
    * 
@@ -104,7 +107,14 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
    
    Socket clientSocket;
    
+   private static boolean completePathsent = false; 
+   
+   
   private AITVTCPCommunication serialCommunication;
+  
+  
+  
+ // private final Router r ;
   
 
   /**
@@ -286,13 +296,28 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
   @Override
   public synchronized void sendCommand(MovementCommand cmd) {
     requireNonNull(cmd, "cmd");
-    
-    
-  System.out.println("I am called");
-    
-      cmd.getStep().getPath();
-            
-    
+      String CompleteRoute = "This is Complete Path:-"+ vehicle.getName();
+     
+      
+       
+       for(MovementCommand m : getCommandQueue()){
+          
+          System.out.println(m.getStep().toString());
+          CompleteRoute += "--> " + m.getStep().toString();
+            System.out.println(CompleteRoute);
+          
+           }
+       try {
+      AITVTCPCommunication.sendCommand(this, CompleteRoute);
+           completePathsent = true;
+           
+    }
+    catch (IOException ex) {
+      java.util.logging.Logger.getLogger(AGVCommAdapter.class.getName()).log(Level.SEVERE, null, ex);
+    }
+       
+       
+       
     
     
     try {
@@ -443,9 +468,14 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
     protected void runActualTask() {
       final MovementCommand curCommand;
       
-     
+     // TCSObjectReference<Route>.  
+    
+       //VehicleServices
       
-      
+       
+       
+       
+       
       synchronized (AGVCommAdapter.this) {
         curCommand = getSentQueue().peek();
         
@@ -460,16 +490,12 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
         // If we were told to move somewhere, simulate the journey.
         LOG.debug("Processing MovementCommand...");
         final Route.Step curStep = curCommand.getStep();
-       
         
        
-        
-        
-        
-        
+    
+          
           System.out.println("Called HEre" + getCommandQueue().size());
-         // System.out.println("Called HEre" + vehicle.);
-        
+       
          
         
         

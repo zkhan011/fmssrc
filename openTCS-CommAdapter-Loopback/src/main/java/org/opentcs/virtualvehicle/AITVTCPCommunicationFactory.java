@@ -34,7 +34,7 @@ public class AITVTCPCommunicationFactory {
           this.vehicleId = CommunicationAdapter.getName();
          }
       else {
-         this.ipaddress = "192.168.0.96";
+         this.ipaddress = "192.168.1.151";
          this.vehicleId = CommunicationAdapter.getName();
       }
         

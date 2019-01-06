@@ -226,6 +226,9 @@ public class DriveOrder
      * Properties of this destination.
      * May contain parameters for the operation, for instance.
      */
+    
+    private Route route;
+    
     private final Map<String, String> properties;
 
     /**
@@ -281,6 +284,8 @@ public class DriveOrder
           ? (TCSObjectReference<Location>) requireNonNull(destination)
           : TCSObjectReference.getDummyReference(Location.class, destination.getName());
       this.operation = OP_NOP;
+    // this.route = destination.getReferentClass() == Route.class (Route) requireNonNull(sestination);
+      
       this.properties = Collections.unmodifiableMap(new HashMap<>());
     }
 
@@ -307,6 +312,13 @@ public class DriveOrder
       return location;
     }
 
+    
+    public Route getRoute(){
+      
+      System.out.println(route);
+      return route;
+    }
+    
     /**
      * Returns the actual destination (a location or point).
      *

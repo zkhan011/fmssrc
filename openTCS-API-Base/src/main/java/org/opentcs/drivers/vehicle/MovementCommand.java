@@ -73,7 +73,14 @@ public class MovementCommand {
   private final String finalOperation;
   /**
    * Properties of the order this command is part of.
+   * 
+   * 
+   * 
+   * 
    */
+  
+  
+  
   private final Map<String, String> properties;
 
   /**
@@ -153,6 +160,9 @@ public class MovementCommand {
    */
   @Nonnull
   public Step getStep() {
+    
+    
+    
     return step;
   }
 
