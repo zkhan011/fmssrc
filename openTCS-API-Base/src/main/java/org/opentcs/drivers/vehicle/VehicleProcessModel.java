@@ -29,6 +29,9 @@ import org.opentcs.util.annotations.ScheduledApiChange;
  */
 public class VehicleProcessModel {
 
+  
+  
+  private String vehicleIp;
   /**
    * The maximum number of notifications we want to keep.
    */
@@ -277,6 +280,28 @@ public class VehicleProcessModel {
                                                   oldValue,
                                                   angle);
   }
+  
+  public void setVehicleIpAddress(String vehicleIp ) {
+    String oldValue = this.vehicleIp;
+    this.vehicleIp = vehicleIp;
+
+    getPropertyChangeSupport().firePropertyChange(Attribute.VEHICLE_IP.name(),
+                                                  oldValue,
+                                                  vehicleIp);
+    
+    publishUserNotification(new UserNotification(getName(),
+                                                   "Vehicle IP ADDRESS CHANGED",
+                                                   UserNotification.Level.NOTEWORTHY));
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
 
   /**
    * Returns the vehicle's current energy level.
@@ -521,6 +546,7 @@ public class VehicleProcessModel {
                                                   failedCommand);
   }
 
+  
   protected PropertyChangeSupport getPropertyChangeSupport() {
     return pcs;
   }
@@ -690,7 +716,7 @@ public class VehicleProcessModel {
     /**
      * Indicates a change of a vehicle property.
      */
-    VEHICLE_PROPERTY,
+    VEHICLE_PROPERTY,VEHICLE_IP,
     /**
      * Indicates a change of a transport order property.
      */

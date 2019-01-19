@@ -44,6 +44,8 @@ public class Destination {
    * @return The location name
    */
   public String getLocationName() {
+    
+    
     return locationName;
   }
 
@@ -53,6 +55,8 @@ public class Destination {
    * @param locationName The new name
    */
   public void setLocationName(String locationName) {
+    
+    
     this.locationName = locationName;
   }
 

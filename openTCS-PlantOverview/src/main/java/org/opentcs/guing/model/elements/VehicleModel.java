@@ -42,7 +42,9 @@ import org.opentcs.guing.util.ResourceBundleUtil;
  */
 public class VehicleModel
     extends AbstractFigureComponent {
-
+  
+  
+  
   public static final String LENGTH = "Length";
   public static final String ENERGY_LEVEL_CRITICAL = "EnergyLevelCritical";
   public static final String ENERGY_LEVEL_GOOD = "EnergyLevelGood";

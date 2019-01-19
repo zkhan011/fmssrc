@@ -107,7 +107,7 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
    
    Socket clientSocket;
    
-   private static boolean completePathsent = false; 
+  private static boolean completePathsent = false; 
    
    
   private AITVTCPCommunication serialCommunication;
@@ -247,11 +247,12 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
       LOG.debug("vehicle communications ennabled");
       
       
-    
+     
     }
     
       getProcessModel().getVelocityController().addVelocityListener(getProcessModel());
       getProcessModel().setVehicleState(Vehicle.State.IDLE);
+      Vehicle.IntegrationLevel integration = Vehicle.IntegrationLevel.TO_BE_UTILIZED; 
       // Create task for vehicle simulation.
       vehicleSimulationTask = new VehicleSimulationTask();
       Thread simThread = new Thread(vehicleSimulationTask, getName() + "-simulationTask");
@@ -281,6 +282,9 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
     }
     
       getProcessModel().setVehicleState(Vehicle.State.UNAVAILABLE);
+      
+    
+    
      
   
     super.disable();
@@ -296,6 +300,8 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
   @Override
   public synchronized void sendCommand(MovementCommand cmd) {
     requireNonNull(cmd, "cmd");
+    
+    
       String CompleteRoute = "This is Complete Path:-"+ vehicle.getName();
      
       
@@ -381,16 +387,25 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
 
   @Override
   protected synchronized void connectVehicle() {
+    
+    //System.out.println("this is the ip address from panel" + getProcessModel().);
+    
+    
+    System.out.println("This is my ip address now " + vehicle.getvehicleipaddress());
    
    try{
      
       AITVTCPCommunicationFactory serialCommunicationFactory;    
-      serialCommunicationFactory = new AITVTCPCommunicationFactory(this,vehicle.getName());
+      serialCommunicationFactory = new AITVTCPCommunicationFactory(this,vehicle.getName(),vehicle.getvehicleipaddress());
       this.serialCommunication = serialCommunicationFactory.getSerialCommunication();
       LOG.debug("communication established");
       }catch(Exception e){
       System.out.println("Error!");
       }
+      finally{
+     
+          disable();
+   }
       
     
  
@@ -408,6 +423,10 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
     catch (IOException ex) {
       java.util.logging.Logger.getLogger(AGVCommAdapter.class.getName()).log(Level.SEVERE, null, ex);
     }
+  finally{
+    
+    disable();
+  }
      
     
     
@@ -429,7 +448,10 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
         .setOperatingTime(getProcessModel().getOperatingTime())
         .setSingleStepModeEnabled(getProcessModel().isSingleStepModeEnabled())
         .setUnloadOperation(getProcessModel().getUnloadOperation())
-        .setVehiclePaused(getProcessModel().isVehiclePaused());
+        .setVehiclePaused(getProcessModel().isVehiclePaused())
+        .setVehicleIpAddress(vehicle.getvehicleipaddress())
+        ;
+        
   }
 
   /**
@@ -483,7 +505,7 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
       }
       simAdvanceTime = (int) (ADVANCE_TIME * configuration.simulationTimeFactor());
       if (curCommand == null) {
-        Uninterruptibles.sleepUninterruptibly(ADVANCE_TIME, TimeUnit.MILLISECONDS);
+       Uninterruptibles.sleepUninterruptibly(ADVANCE_TIME, TimeUnit.MILLISECONDS);
         getProcessModel().getVelocityController().advanceTime(simAdvanceTime);
       }
       else {
@@ -533,8 +555,12 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
             // and we shouldn't report anything back.
             if (sentCmd != null && sentCmd.equals(curCommand)) {
               // Let the vehicle manager know we've finished this command.
+              
+              System.out.println("Command Execute Code Is Called....... " );
               getProcessModel().commandExecuted(curCommand);
               AGVCommAdapter.this.notify();
+              
+              System.out.println("Command Execute End "   );
             }
           }
         }
@@ -581,12 +607,17 @@ public class AGVCommAdapter extends BasicVehicleCommAdapter implements SimVehicl
       // controller has processed all way entries.
       while (getProcessModel().getVelocityController().hasWayEntries() && !isTerminated()) {
         VelocityController.WayEntry wayEntry = getProcessModel().getVelocityController().getCurrentWayEntry();
+        
+          System.out.println("Wayentries simulate movement code 1 " );
         Uninterruptibles.sleepUninterruptibly(ADVANCE_TIME, TimeUnit.MILLISECONDS);
         getProcessModel().getVelocityController().advanceTime(simAdvanceTime);
         VelocityController.WayEntry nextWayEntry = getProcessModel().getVelocityController().getCurrentWayEntry();
         if (wayEntry != nextWayEntry) {
           // Let the vehicle manager know that the vehicle has reached
           // the way entry's destination point.
+          System.out.println("Wayentries simulate movement code " + wayEntry.getDestPointName());
+          
+          
           getProcessModel().setVehiclePosition(wayEntry.getDestPointName());
         }
       }

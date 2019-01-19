@@ -154,6 +154,8 @@ public class OrderHandler {
 
       for (Property prop : dest.getProperties()) {
         to = to.withProperty(prop.getKey(), prop.getValue());
+        System.out.println("reading destination" + to.toString());
+        
       }
 
       result.add(to);

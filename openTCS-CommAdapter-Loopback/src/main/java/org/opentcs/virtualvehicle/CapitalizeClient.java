@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 import javax.swing.JFrame;
@@ -70,13 +72,36 @@ public class CapitalizeClient extends Thread  {
   @Override
    public void run() 
   {
-    
+     // int counter = 0;
      
+     //  sendMessage("Hello");
+      
      System.out.println("Start, type and press Enter key");
      while(!ct){
        
+      // System.out.print(ct);
+      // sendMessage("Hi");
+
+         //readCommand();
+        // if (counter<=4){
+        //  sendMessage("Hello" + counter);
+         // counter++;
+         
+        // }
+         
+        // else{
+           
+           //sendMessage("");
+           // counter=0;
+           
+         
+       //  }
+      
+        
        
-       
+         
+         
+         
        
      }
      
@@ -87,8 +112,13 @@ public class CapitalizeClient extends Thread  {
    public void disconnect() throws IOException{
      
      System.out.println("org.opentcs.virtualvehicle.CapitalizeClient.disconnect()");
+     try{
      this.ct = true;
+     
+     }
+     finally{
      this.sock.close();
+     }
      
    }
    
@@ -115,7 +145,24 @@ public class CapitalizeClient extends Thread  {
     return position;
   
    }
-   
+    public Boolean readCommand() throws IOException {
+      
+      System.out.println(this.receiveRead.readLine().toLowerCase());
+     if (this.receiveRead.readLine().toLowerCase() == "yes")
+     {
+        
+       return true;
+ 
+       
+     }
+ 
+        
+     return false;
+        
+    
+    
+  }
+      
    
    
    
@@ -124,14 +171,20 @@ public class CapitalizeClient extends Thread  {
      public static void main(String[] args) throws Exception {
         System.out.println("The capitalization Client  is running.");
       
-                  new CapitalizeClient("127.0.0.1").sendMessage("Hello");
+             CapitalizeClient c  = new CapitalizeClient("192.168.1.151") ;
+         
+             c.start();
+             
+       
+            // c.sendMessage("Hi");
          
        
           
-        }
+  
         
-        
-      
+     }
+
+ 
         
     }
    

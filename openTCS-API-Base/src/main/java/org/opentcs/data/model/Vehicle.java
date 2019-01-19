@@ -162,7 +162,7 @@ public class Vehicle
   public Vehicle(int objectID, String name) {
     super(objectID, name);
     this.length = 1000;
-    this.vehicleip = "127.0.0.1";
+    this.vehicleip = null;
     this.energyLevelGood = 90;
     this.energyLevelCritical = 30;
     this.maxVelocity = 1000;
@@ -191,7 +191,7 @@ public class Vehicle
   @SuppressWarnings("deprecation")
   public Vehicle(String name) {
     super(name);
-    this.vehicleip = "127.0.0.1";
+    this.vehicleip = null;
     this.length = 1000;
     this.energyLevelGood = 90;
     this.energyLevelCritical = 30;
@@ -1575,6 +1575,7 @@ public class Vehicle
   public String toString() {
     return "Vehicle{"
         + "name=" + getName()
+        + ", ipaddress=" + vehicleip
         + ", procState=" + procState
         + ", integrationLevel=" + integrationLevel
         + ", state=" + state
@@ -1602,6 +1603,14 @@ public class Vehicle
     return vehicleip;
   }
 
+   public void setvehicleipaddress(String ip) {
+    
+    this.vehicleip = ip;
+  }
+  
+  
+  
+  
   @SuppressWarnings("deprecation")
   private int getIdWithoutDeprecationWarning() {
     return getId();

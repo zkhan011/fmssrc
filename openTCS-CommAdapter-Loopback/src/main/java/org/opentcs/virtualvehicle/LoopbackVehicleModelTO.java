@@ -17,6 +17,14 @@ import org.opentcs.drivers.vehicle.management.VehicleProcessModelTO;
 public class LoopbackVehicleModelTO
     extends VehicleProcessModelTO {
 
+ 
+  /**
+   * Vehicle IP Address.
+   */
+  
+  private String vehicleIpAddress;
+  
+  
   /**
    * Whether this communication adapter is in single step mode or not (i.e. in automatic mode).
    */
@@ -134,4 +142,15 @@ public class LoopbackVehicleModelTO
     this.vehiclePaused = vehiclePaused;
     return this;
   }
+  
+  public LoopbackVehicleModelTO setVehicleIpAddress(String vehicleIpAddress) {
+    this.vehicleIpAddress = vehicleIpAddress;
+    return this;
+  }
+
+  public String getVehicleIpAddress() {
+    return vehicleIpAddress;
+  }
+  
+  
 }

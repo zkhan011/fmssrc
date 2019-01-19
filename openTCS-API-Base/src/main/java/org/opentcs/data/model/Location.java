@@ -315,6 +315,8 @@ public class Location
      * @return A reference to the location end of this link.
      */
     public TCSResourceReference<Location> getLocation() {
+     
+      
       return location;
     }
 

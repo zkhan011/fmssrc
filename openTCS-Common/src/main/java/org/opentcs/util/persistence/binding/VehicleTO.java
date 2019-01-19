@@ -45,6 +45,10 @@ public class VehicleTO
     this.type = type;
     return this;
   }
+  
+  
+  
+  
 
   @XmlAttribute
   @XmlSchemaType(name = "unsignedInt")

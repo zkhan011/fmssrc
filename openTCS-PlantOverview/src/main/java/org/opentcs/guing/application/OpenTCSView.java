@@ -1100,12 +1100,14 @@ public class OpenTCSView
 
   /**
    * Adds a background image to the currently active drawing view.
+   * added method to store background image in the background
    *
    * @param file The file with the image.
    */
   public void addBackgroundBitmap(File file) {
-    if (appState.hasOperationMode(OperationMode.MODELLING)) {
+    if (appState.hasOperationMode(OperationMode.MODELLING) || appState.hasOperationMode(OperationMode.OPERATING)) {
       viewManager.setBitmapToModellingView(file);
+      
     }
     else {
       getActiveDrawingView().addBackgroundBitmap(file);

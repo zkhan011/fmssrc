@@ -10,6 +10,8 @@ package org.opentcs.virtualvehicle;
 import javax.annotation.Nonnull;
 import org.opentcs.common.LoopbackAdapterConstants;
 import org.opentcs.data.model.Vehicle;
+import org.opentcs.data.notification.UserNotification;
+import org.opentcs.drivers.vehicle.VehicleCommAdapter;
 import org.opentcs.drivers.vehicle.VehicleProcessModel;
 
 /**
@@ -20,6 +22,14 @@ import org.opentcs.drivers.vehicle.VehicleProcessModel;
 public class LoopbackVehicleModel
     extends VehicleProcessModel
     implements VelocityListener {
+  
+   /**
+   * Indicates the current Ipaddress for the attached vehicle
+   */
+  
+
+  
+  
 
   /**
    * Indicates whether this communication adapter is in single step mode or not (i.e. in automatic
@@ -46,6 +56,9 @@ public class LoopbackVehicleModel
    * Keeps a log of recent velocity values.
    */
   private final VelocityHistory velocityHistory = new VelocityHistory(100, 10);
+  
+  
+  private Vehicle v1;
 
   public LoopbackVehicleModel(Vehicle attachedVehicle) {
     super(attachedVehicle);
@@ -58,6 +71,10 @@ public class LoopbackVehicleModel
         = attachedVehicle.getProperty(LoopbackAdapterConstants.PROPKEY_LOAD_OPERATION);
     this.unloadOperation
         = attachedVehicle.getProperty(LoopbackAdapterConstants.PROPKEY_UNLOAD_OPERATION);
+    
+    
+    
+    this.v1 = attachedVehicle;
   }
 
   public String getLoadOperation() {
@@ -261,6 +278,24 @@ public class LoopbackVehicleModel
                                                   velocityHistory);
   }
 
+  public synchronized String setVehicleIpAddress(String vehicleIpaddress , AGVCommAdapter adapter) {
+    
+   v1.setvehicleipaddress(vehicleIpaddress);
+   getPropertyChangeSupport().firePropertyChange(Attribute.VEHICLE_IP.name(),
+                                                  null,
+                                                  vehicleIpaddress);
+   
+    
+   
+   return vehicleIpaddress;
+ 
+  }
+  
+  
+  
+    
+
+
   private int parseOperatingTime(Vehicle vehicle) {
     String opTime = vehicle.getProperty(LoopbackAdapterConstants.PROPKEY_OPERATING_TIME);
     // Ensure it's a positive value.
@@ -326,6 +361,6 @@ public class LoopbackVehicleModel
     /**
      * Indicates a change of the virtual vehicle's velocity history.
      */
-    VELOCITY_HISTORY,
+    VELOCITY_HISTORY, VEHICLE_IP,
   }
 }

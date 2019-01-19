@@ -26,17 +26,12 @@ public class AITVTCPCommunicationFactory {
     private String vehicleId ;
     public String ipaddress;    
     
-    public AITVTCPCommunicationFactory(AGVCommAdapter CommunicationAdapter, String vehicleName){
+    public AITVTCPCommunicationFactory(AGVCommAdapter CommunicationAdapter, String vehicleName , String vehicleIp){
        System.out.println("ip Method" + vehicleName);
       
-       if (!vehicleName.equalsIgnoreCase("Vehicle-04")){
-          this.ipaddress = "127.0.0.1";
-          this.vehicleId = CommunicationAdapter.getName();
-         }
-      else {
-         this.ipaddress = "192.168.1.151";
+         this.ipaddress = vehicleIp;
          this.vehicleId = CommunicationAdapter.getName();
-      }
+      
         
         synchronized(TCP_COMMUNICATION){
           System.out.println("Sync Method");

@@ -133,6 +133,11 @@ public abstract class TextInputPanel
      * Regular expression to validate the documents text against.
      */
     private final String format;
+    /**
+     * Regular expression to validate and accept IPV4.
+     */
+    public static final String REGEX_IPV4 = "(([0-1]?[0-9]{1,2}\\.)|(2[0-4][0-9]\\.)|(25[0-5]\\.)){3}(([0-1]?[0-9]{1,2})|(2[0-4][0-9])|(25[0-5]))";
+    
 
     /**
      * Create an instance of <code>TextInputValidator</code>.

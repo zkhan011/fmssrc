@@ -44,6 +44,10 @@ public class VehicleCreationTO
    * The vehicle's maximum reverse velocity (in mm/s).
    */
   private int maxReverseVelocity = 1000;
+  
+  
+  
+  private String vehicleIp = "127.0.0.1";
 
   /**
    * Creates a new instance.
@@ -60,13 +64,15 @@ public class VehicleCreationTO
                             int energyLevelCritical,
                             int energyLevelGood,
                             int maxVelocity,
-                            int maxReverseVelocity) {
+                            int maxReverseVelocity,
+                            String vehicleIp ) {
     super(name, properties);
     this.length = length;
     this.energyLevelCritical = energyLevelCritical;
     this.energyLevelGood = energyLevelGood;
     this.maxVelocity = maxVelocity;
     this.maxReverseVelocity = maxReverseVelocity;
+    this.vehicleIp = vehicleIp;
   }
 
   /**
@@ -97,7 +103,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp);
   }
 
   /**
@@ -128,7 +135,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp    );
   }
 
   /**
@@ -164,7 +172,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp);
   }
 
   /**
@@ -206,7 +215,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp );
   }
 
   /**
@@ -252,7 +262,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp);
   }
 
   /**
@@ -291,7 +302,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                  vehicleIp);
   }
 
   public int getMaxReverseVelocity() {
@@ -319,7 +331,8 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp);
   }
 
   /**
@@ -357,6 +370,7 @@ public class VehicleCreationTO
                                  energyLevelCritical,
                                  energyLevelGood,
                                  maxVelocity,
-                                 maxReverseVelocity);
+                                 maxReverseVelocity,
+                                 vehicleIp );
   }
 }

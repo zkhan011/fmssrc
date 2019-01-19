@@ -78,42 +78,16 @@ class AITVTCPCommunication {
     CapitalizeClient c = new CapitalizeClient(ipaddress);
     c.start();
     c.sendMessage("Hello this is" + vehicleId);
+    
     ConnectedCLient.put(vehicleId,c);
     
     System.out.println("Connceted Client" + c);
     
       idToNameMap.get(vehicleId).getProcessModel().setVehicleState(Vehicle.State.IDLE);
-      idToNameMap.get(vehicleId).initVehiclePosition(c.getPosition());
+      
+      idToNameMap.get(vehicleId).initVehiclePosition("Point-0007");
     
-    
-    
-  
-    
-    
-   // sockname.start();
-    
-    //sock = new Socket(ipaddress, 11000);
-    // reading from keyboard (keyRead object)
-    //BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
-    // sending to client pwrite object)
-    // out = sock.getOutputStream();
-    // PrintWriter pwrite = new PrintWriter(out, true);
-    // receiving from server ( receiveRead  object)
-    // in = sock.getInputStream();
-    // BufferedReader receiveRead = new BufferedReader(new InputStreamReader(in));
-    //  pwrite.println("FIRST <EOF>");       // sending to server
-    // System.out.println("Start, type and press Enter key");
-    //  String receiveMessage, sendMessage;
-    // for ( int i =0 ; i<5;i++)
-    // {
-    // sendMessage = keyRead.readLine();  // keyboard reading
-    //  pwrite.println(sendMessage);       // sending to server
-    //  pwrite.flush();                    // flush the data
-    // if((receiveMessage = receiveRead.readLine()) != "NULL"  || (receiveMessage = receiveRead.readLine())!= null  ) //receive from server
-    // {
-    //System.out.println(receiveMessage); // displaying at DOS prompt
-    //}
-    // }
+
                      
   }
    public static void disconnectAdapter(AGVCommAdapter adapter, String vehicleId) throws IOException{
@@ -142,7 +116,14 @@ class AITVTCPCommunication {
        
        if(vehicleId != null){
           System.out.println("Disconnecting adapter");
-          ConnectedCLient.get(vehicleId).disconnect();
+          try{
+            ConnectedCLient.get(vehicleId).disconnect();
+          }
+          catch (Exception e){
+            
+            
+          }
+          
             idToNameMap.get(vehicleId).getProcessModel().setVehicleState(Vehicle.State.UNAVAILABLE);
           if(NameToIdMap.isEmpty()){
              System.out.println("removing instance adapter");
@@ -170,6 +151,25 @@ class AITVTCPCommunication {
        
         
        }
+   public static boolean ExecuteCommand(AGVCommAdapter adapter, String vehicleId) throws IOException{
+     
+       
+       System.out.println("sending message to adpter" + adapter);
+       return ConnectedCLient.get(NameToIdMap.get(adapter)).readCommand();
+        
+          
+         
+         
+       
+        
+       }
+   
+   
+   
+   
+   
+   
+   
     }
    
    

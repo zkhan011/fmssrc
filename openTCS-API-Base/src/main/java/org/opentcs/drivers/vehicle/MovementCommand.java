@@ -13,6 +13,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import org.opentcs.data.model.Location;
 import org.opentcs.data.model.Point;
+import org.opentcs.data.model.Triple;
 import org.opentcs.data.order.DriveOrder;
 import org.opentcs.data.order.Route.Step;
 import org.opentcs.util.annotations.ScheduledApiChange;
@@ -214,6 +215,11 @@ public class MovementCommand {
    */
   @Nonnull
   public Point getFinalDestination() {
+    
+
+   // finalDestination.withPosition(position)
+    
+    
     return finalDestination;
   }
 
@@ -224,6 +230,8 @@ public class MovementCommand {
    */
   @Nullable
   public Location getFinalDestinationLocation() {
+    
+    
     return finalDestinationLocation;
   }
 

@@ -29,6 +29,11 @@ public class VehicleState {
 
   @JsonPropertyDescription("A set of properties (key-value pairs) associated with this object.")
   private Map<String, String> properties = new HashMap<>();
+  
+  
+   @JsonPropertyDescription("The vehicle's ip address.")
+  private String vehicleip;
+  
 
   @JsonPropertyDescription("The vehicle's length (in mm).")
   private int length;
@@ -69,6 +74,19 @@ public class VehicleState {
   public void setName(String name) {
     this.name = requireNonNull(name, "name");
   }
+  
+   public String getVehicleIp() {
+    return vehicleip;
+  }
+
+  public void setVehicleIp(String vehicleip) {
+    //this.vehicleip = requireNonNull(vehicleip, "vehicleip");
+    this.vehicleip = "Hello World" + vehicleip;
+    
+  }
+  
+  
+  
 
   public int getLength() {
     return length;
@@ -163,7 +181,10 @@ public class VehicleState {
     }
     VehicleState vehicleState = new VehicleState();
     vehicleState.setName(vehicle.getName());
+   
     vehicleState.setProperties(vehicle.getProperties());
+    
+    vehicleState.setVehicleIp(vehicle.getvehicleipaddress());
     vehicleState.setLength(vehicle.getLength());
     vehicleState.setEnergyLevelGood(vehicle.getEnergyLevelGood());
     vehicleState.setEnergyLevelCritical(vehicle.getEnergyLevelCritical());

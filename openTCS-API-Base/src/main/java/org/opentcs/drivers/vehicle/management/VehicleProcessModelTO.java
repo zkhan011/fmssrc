@@ -32,6 +32,18 @@ public class VehicleProcessModelTO
    * The vehicle name to this process model.
    */
   private String vehicleName;
+  
+   /**
+   * The vehicle ip address to this model.
+   */
+  private String vehicleIp;
+  
+  
+  
+  
+  
+  
+  
   /**
    * Whether the comm adapter is currently enabled.
    */
@@ -164,4 +176,20 @@ public class VehicleProcessModelTO
     this.vehicleState = requireNonNull(state, "state");
     return this;
   }
+   public String getVehicleIp() {
+    return vehicleIp;
+  }
+
+  public VehicleProcessModelTO setVehicleIp(String vehicleIp) {
+    this.vehicleIp = vehicleIp;
+    return this;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
 }

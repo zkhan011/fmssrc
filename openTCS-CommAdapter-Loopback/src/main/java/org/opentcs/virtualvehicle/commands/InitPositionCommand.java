@@ -11,6 +11,7 @@ import static java.util.Objects.requireNonNull;
 import javax.annotation.Nonnull;
 import org.opentcs.drivers.vehicle.AdapterCommand;
 import org.opentcs.drivers.vehicle.VehicleCommAdapter;
+import org.opentcs.virtualvehicle.AGVCommAdapter;
 import org.opentcs.virtualvehicle.LoopbackCommunicationAdapter;
 
 /**
@@ -38,6 +39,9 @@ public class InitPositionCommand
   @Override
   public void execute(VehicleCommAdapter adapter) {
     if (!(adapter instanceof LoopbackCommunicationAdapter)) {
+      AGVCommAdapter loopbackAdapter = (AGVCommAdapter) adapter;
+      loopbackAdapter.initVehiclePosition(position);
+      
       return;
     }
 

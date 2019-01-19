@@ -44,11 +44,13 @@ import org.opentcs.util.Comparators;
 import org.opentcs.util.gui.StringListCellRenderer;
 import org.opentcs.virtualvehicle.commands.CurrentMovementCommandFailedCommand;
 import org.opentcs.virtualvehicle.commands.SetSingleStepModeEnabledCommand;
+import org.opentcs.virtualvehicle.commands.SetVehicleIpAddressFromPanel;
 import org.opentcs.virtualvehicle.commands.SetVehiclePausedCommand;
 import org.opentcs.virtualvehicle.commands.TriggerCommand;
 import org.opentcs.virtualvehicle.inputcomponents.DropdownListInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.InputDialog;
 import org.opentcs.virtualvehicle.inputcomponents.InputPanel;
+import org.opentcs.virtualvehicle.inputcomponents.IpAddressTextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.SingleTextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.TextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.TripleTextInputPanel;
@@ -157,6 +159,14 @@ public class LoopbackCommAdapterPanel
                             LoopbackVehicleModel.Attribute.VEHICLE_PAUSED.name())) {
       updateVehiclePaused(processModel.isVehiclePaused());
     }
+   
+    else if (Objects.equals(attributeChanged,
+                            LoopbackVehicleModel.Attribute.VEHICLE_IP.name())) {
+      updateVehicleIp(processModel.getVehicleIpAddress());
+    }
+    
+    
+    
   }
 
   private void updateVehicleProcessModelData(String attributeChanged,
@@ -246,6 +256,21 @@ public class LoopbackCommAdapterPanel
       }
     });
   }
+  
+   private void updateVehicleIp(String Ip) {
+    SwingUtilities.invokeLater(() -> {
+      if (Ip == null) {
+         vehicleIpAddressTxt1.setText("127.0.0.1");
+      }
+      else {
+          vehicleIpAddressTxt1.setText(Ip);
+      }
+    });
+  }
+  
+  
+  
+  
 
   private void updateOrientationAngle(Double orientation) {
     SwingUtilities.invokeLater(() -> {
@@ -303,6 +328,7 @@ public class LoopbackCommAdapterPanel
     SwingUtilities.invokeLater(() -> precisePosTextArea.setEnabled(enabled));
     SwingUtilities.invokeLater(() -> orientationAngleTxt.setEnabled(enabled));
     SwingUtilities.invokeLater(() -> pauseVehicleCheckBox.setEnabled(enabled));
+    SwingUtilities.invokeLater(() -> vehicleIpAddressTxt1.setEnabled(enabled));
   }
 
   private TCSObjectReference<Vehicle> getVehicleReference()
@@ -353,9 +379,8 @@ public class LoopbackCommAdapterPanel
         defaultOpTimeUntiLbl = new javax.swing.JLabel();
         opTimeTxt = new javax.swing.JTextField();
         vehiclePropsPanel1 = new javax.swing.JPanel();
-        maxFwdVeloLbl1 = new javax.swing.JLabel();
-        maxFwdVeloTxt1 = new javax.swing.JTextField();
-        maxFwdVeloUnitLbl1 = new javax.swing.JLabel();
+        vehicleIpAddressLbl1 = new javax.swing.JLabel();
+        vehicleIpAddressTxt1 = new javax.swing.JTextField();
         maxRevVeloLbl1 = new javax.swing.JLabel();
         maxRevVeloTxt1 = new javax.swing.JTextField();
         maxRevVeloUnitLbl1 = new javax.swing.JLabel();
@@ -579,30 +604,27 @@ public class LoopbackCommAdapterPanel
         vehiclePropsPanel1.setMinimumSize(new java.awt.Dimension(191, 300));
         vehiclePropsPanel1.setLayout(new java.awt.GridBagLayout());
 
-        maxFwdVeloLbl1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        maxFwdVeloLbl1.setText(BUNDLE.getString("maxFwdVelocityLabel")); // NOI18N
+        vehicleIpAddressLbl1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        vehicleIpAddressLbl1.setText(BUNDLE.getString("maxFwdVelocityLabel")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
-        vehiclePropsPanel1.add(maxFwdVeloLbl1, gridBagConstraints);
+        vehiclePropsPanel1.add(vehicleIpAddressLbl1, gridBagConstraints);
 
-        maxFwdVeloTxt1.setEditable(false);
-        maxFwdVeloTxt1.setColumns(5);
-        maxFwdVeloTxt1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        maxFwdVeloTxt1.setText("0");
-        maxFwdVeloTxt1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        maxFwdVeloTxt1.setEnabled(false);
+        vehicleIpAddressTxt1.setEditable(false);
+        vehicleIpAddressTxt1.setText("127.0.0.1");
+        vehicleIpAddressTxt1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        vehicleIpAddressTxt1.setEnabled(false);
+        vehicleIpAddressTxt1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vehicleIpAddressTxt1MouseClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
-        vehiclePropsPanel1.add(maxFwdVeloTxt1, gridBagConstraints);
-
-        maxFwdVeloUnitLbl1.setText("mm/s");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
-        vehiclePropsPanel1.add(maxFwdVeloUnitLbl1, gridBagConstraints);
+        vehiclePropsPanel1.add(vehicleIpAddressTxt1, gridBagConstraints);
 
         maxRevVeloLbl1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         maxRevVeloLbl1.setText(BUNDLE.getString("maxRevVelocityLabel")); // NOI18N
@@ -1430,6 +1452,46 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     sendCommAdapterCommand(new SetLoadHandlingDevicesCommand(devices));
   }//GEN-LAST:event_lHDCheckboxClicked
 
+  private void vehicleIpAddressTxt1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vehicleIpAddressTxt1MouseClicked
+    if (!vehicleIpAddressTxt1.isEnabled()) {
+        String ip = processModel.getVehicleIpAddress();
+      // Create panel and dialog
+      IpAddressTextInputPanel.Builder builder
+          = new IpAddressTextInputPanel.Builder(BUNDLE.getString("ipAddressBoxTitle"));
+      
+      builder.setLabels(BUNDLE.getString("vehicleIpAddress"));
+      builder.enableResetButton(null);
+      builder.enableValidation(TextInputPanel.TextInputValidator.REGEX_IPV4);
+      if (ip == null) {
+        builder.setInitialValues("127.0.0.1");
+      }
+      InputPanel panel = builder.build();
+      InputDialog dialog = new InputDialog(panel);
+      dialog.setVisible(true);
+      // Get dialog result and set vehicle ip address panel
+      if (dialog.getReturnStatus() == InputDialog.ReturnStatus.ACCEPTED) {
+        if (dialog.getInput() == null) {
+          // Clear precise position
+          sendCommAdapterCommand(new SetVehicleIpAddressFromPanel(null));
+        }
+        else {
+          // Set new precise position
+          String x;
+          String[] newPos = (String[]) dialog.getInput();
+          try {
+            x = newPos[0];
+            vehicleIpAddressTxt1.setText(newPos[0]);
+           
+          }
+          catch (NumberFormatException | NullPointerException e) {
+            return;
+          }
+
+          sendCommAdapterCommand(new SetVehicleIpAddressFromPanel(x));
+        }
+      }
+  }//GEN-LAST:event_vehicleIpAddressTxt1MouseClicked
+  }
   /**
    * Set the specified precise position to the text area. The method takes care
    * of the formatting. If any of the parameters is null all values will be set
@@ -1504,11 +1566,8 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private javax.swing.JLabel maxDecelUnitLbl;
     private javax.swing.JLabel maxDecelUnitLbl1;
     private javax.swing.JLabel maxFwdVeloLbl;
-    private javax.swing.JLabel maxFwdVeloLbl1;
     private javax.swing.JTextField maxFwdVeloTxt;
-    private javax.swing.JTextField maxFwdVeloTxt1;
     private javax.swing.JLabel maxFwdVeloUnitLbl;
-    private javax.swing.JLabel maxFwdVeloUnitLbl1;
     private javax.swing.JLabel maxRevVeloLbl;
     private javax.swing.JLabel maxRevVeloLbl1;
     private javax.swing.JTextField maxRevVeloTxt;
@@ -1539,6 +1598,8 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private javax.swing.JButton triggerButton;
     private javax.swing.JTextField valueTextField;
     private javax.swing.JPanel vehicleBahaviourPanel;
+    private javax.swing.JLabel vehicleIpAddressLbl1;
+    private javax.swing.JTextField vehicleIpAddressTxt1;
     private javax.swing.JPanel vehiclePropsPanel;
     private javax.swing.JPanel vehiclePropsPanel1;
     private javax.swing.JPanel vehicleStatePanel;
