@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.data.model.ModelSerializationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:36:40" hostname="DGR-ZISHAN" time="0.498">
+  <properties/>
+  <testcase name="shouldSerializeAndDeserializePath" classname="org.opentcs.data.model.ModelSerializationTest" time="0.466"/>
+  <testcase name="shouldSerializeAndDeserializeLocationType" classname="org.opentcs.data.model.ModelSerializationTest" time="0.002"/>
+  <testcase name="shouldSerializeAndDeserializeBlock" classname="org.opentcs.data.model.ModelSerializationTest" time="0.002"/>
+  <testcase name="shouldSerializeAndDeserializeGroup" classname="org.opentcs.data.model.ModelSerializationTest" time="0.001"/>
+  <testcase name="shouldSerializeAndDeserializePoint" classname="org.opentcs.data.model.ModelSerializationTest" time="0.005"/>
+  <testcase name="shouldSerializeAndDeserializeStaticRoute" classname="org.opentcs.data.model.ModelSerializationTest" time="0.002"/>
+  <testcase name="shouldSerializeAndDeserializeLocation" classname="org.opentcs.data.model.ModelSerializationTest" time="0.004"/>
+  <testcase name="shouldSerializeAndDeserializeVehicle" classname="org.opentcs.data.model.ModelSerializationTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

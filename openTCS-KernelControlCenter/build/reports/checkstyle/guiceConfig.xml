@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.8">
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\DefaultKernelControlCenterExtensionsModule.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="23" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\DefaultKernelControlCenterInjectionModule.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="51" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+<error line="57" severity="warning" message="Line is longer than 100 characters (found 109)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\LoopbackCommAdapterPanelsModule.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="18" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\RunKernelControlCenter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="49" severity="info" message="Uncommented main method found." source="com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\configuration\CachedConfigurationSource.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="62" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\configuration\DefaultConfigurationBindingProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\guiceConfig\java\org\opentcs\kernelcontrolcenter\configuration\PeriodicalReloadStrategy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+</checkstyle>

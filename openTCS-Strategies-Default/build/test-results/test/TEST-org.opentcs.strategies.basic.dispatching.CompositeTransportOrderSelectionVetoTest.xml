@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.strategies.basic.dispatching.CompositeTransportOrderSelectionVetoTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:31" hostname="DGR-ZISHAN" time="0.031">
+  <properties/>
+  <testcase name="shouldVetoTransportOrdersContainingOrder" classname="org.opentcs.strategies.basic.dispatching.CompositeTransportOrderSelectionVetoTest" time="0.024"/>
+  <testcase name="shouldVetoAllTransportOrders" classname="org.opentcs.strategies.basic.dispatching.CompositeTransportOrderSelectionVetoTest" time="0.001"/>
+  <testcase name="shouldVetoTransportOrdersContainingTransport" classname="org.opentcs.strategies.basic.dispatching.CompositeTransportOrderSelectionVetoTest" time="0.0"/>
+  <testcase name="shouldVetoTransportOrdersContainingTransportOrOrder" classname="org.opentcs.strategies.basic.dispatching.CompositeTransportOrderSelectionVetoTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

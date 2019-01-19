@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.util.configuration.ConfigurationItemTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:36:41" hostname="DGR-ZISHAN" time="0.005">
+  <properties/>
+  <testcase name="testgetKey" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.002"/>
+  <testcase name="testConfigurationItem" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <testcase name="testgetValue" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <testcase name="testgetConstraint" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <testcase name="testEquals" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <testcase name="testgetDescription" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <testcase name="testgetNamespace" classname="org.opentcs.util.configuration.ConfigurationItemTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

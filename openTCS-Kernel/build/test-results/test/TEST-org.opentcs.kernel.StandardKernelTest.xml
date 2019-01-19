@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.kernel.StandardKernelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:04" hostname="DGR-ZISHAN" time="0.474">
+  <properties/>
+  <testcase name="testStateSwitchToOperating" classname="org.opentcs.kernel.StandardKernelTest" time="0.472"/>
+  <testcase name="testStateSwitchToModelling" classname="org.opentcs.kernel.StandardKernelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 17, 2019 10:37:04 AM org.opentcs.kernel.StandardKernel setState
+INFO: Switching kernel to state 'OPERATING'
+Jan 17, 2019 10:37:05 AM org.opentcs.kernel.StandardKernel setState
+INFO: Switching kernel to state 'MODELLING'
+]]></system-err>
+</testsuite>

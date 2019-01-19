@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.strategies.basic.routing.DefaultRouterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:32" hostname="DGR-ZISHAN" time="0.185">
+  <properties/>
+  <testcase name="shouldUseDefaultRoutingGroup" classname="org.opentcs.strategies.basic.routing.DefaultRouterTest" time="0.181"/>
+  <testcase name="shouldUseDefaultAndSetRoutingGroups" classname="org.opentcs.strategies.basic.routing.DefaultRouterTest" time="0.001"/>
+  <testcase name="shouldUseSetRoutingGroups" classname="org.opentcs.strategies.basic.routing.DefaultRouterTest" time="0.002"/>
+  <testcase name="shouldUseDefinedRoutingGroup" classname="org.opentcs.strategies.basic.routing.DefaultRouterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

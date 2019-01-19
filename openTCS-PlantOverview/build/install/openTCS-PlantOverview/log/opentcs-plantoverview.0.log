@@ -1,0 +1,97 @@
+[20190117-15:51:21-651] INFO    main                 o.o.util.Environment.logSystemInfo()                   : openTCS baseline version: 4.10.0-SNAPSHOT (build date: 2019-01-08 16:31:16), customization '-' version - (build date: -), Java: 1.8.0_181, Oracle Corporation; JVM: 25.181-b13, Oracle Corporation; OS: Windows 10, amd64
+[20190117-15:51:21-828] INFO    main                 o.c.provider.ConfigurationProviderBuilder.build()      : Initializing ConfigurationProvider with org.opentcs.guing.configuration.CachedConfigurationSource source, org.opentcs.guing.configuration.PeriodicalReloadStrategy reload strategy and org.cfg4j.source.context.environment.DefaultEnvironment environment
+[20190117-15:51:21-901] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultImportersExportersModule
+[20190117-15:51:21-906] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultPluginPanelsModule
+[20190117-15:51:21-913] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.PropertySuggestionsModule
+[20190117-15:51:21-918] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.transport.OrderCategorySuggestionsModule
+[20190117-15:51:22-810] WARNING main                 o.o.guing.DefaultPlantOverviewInjectionModule.configureSocketConnections(): SSL encryption disabled, connections will not be secured!
+[20190117-15:51:27-782] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.loadgenerator.ContinuousLoadPanelFactory
+[20190117-15:51:27-782] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.statistics.StatisticsPanelFactory
+[20190117-15:51:27-783] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.allocation.ResourceAllocationPanelFactory
+[20190117-15:51:27-912] INFO    main                 o.o.g.exchange.KernelEventFetcher.initialize()         : Initializing...
+[20190117-15:51:53-821] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully persisted.
+[20190117-15:52:01-715] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully persisted.
+[20190117-15:52:07-628] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully loaded from kernel.
+[20190117-16:36:12-926] INFO    AWT-EventQueue-0     o.o.g.application.OpenTCSView.stop()                   : GUI terminating...
+[20190117-16:46:53-081] INFO    main                 o.o.util.Environment.logSystemInfo()                   : openTCS baseline version: 4.10.0-SNAPSHOT (build date: 2019-01-08 16:31:16), customization '-' version - (build date: -), Java: 1.8.0_181, Oracle Corporation; JVM: 25.181-b13, Oracle Corporation; OS: Windows 10, amd64
+[20190117-16:46:53-276] INFO    main                 o.c.provider.ConfigurationProviderBuilder.build()      : Initializing ConfigurationProvider with org.opentcs.guing.configuration.CachedConfigurationSource source, org.opentcs.guing.configuration.PeriodicalReloadStrategy reload strategy and org.cfg4j.source.context.environment.DefaultEnvironment environment
+[20190117-16:46:53-358] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultImportersExportersModule
+[20190117-16:46:53-362] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultPluginPanelsModule
+[20190117-16:46:53-366] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.PropertySuggestionsModule
+[20190117-16:46:53-371] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.transport.OrderCategorySuggestionsModule
+[20190117-16:46:54-191] WARNING main                 o.o.guing.DefaultPlantOverviewInjectionModule.configureSocketConnections(): SSL encryption disabled, connections will not be secured!
+[20190117-16:46:59-125] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.loadgenerator.ContinuousLoadPanelFactory
+[20190117-16:46:59-125] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.statistics.StatisticsPanelFactory
+[20190117-16:46:59-126] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.allocation.ResourceAllocationPanelFactory
+[20190117-16:46:59-255] INFO    main                 o.o.g.exchange.KernelEventFetcher.initialize()         : Initializing...
+[20190117-16:51:53-129] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "dp_demo" successfully persisted.
+[20190117-16:53:23-805] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "dp_demo" successfully loaded from kernel.
+[20190117-16:56:20-064] SEVERE  KernelEventFetcher   o.o.g.exchange.KernelEventFetcher$EventFetcherTask.runActualTask(): Exception fetching events, logging out
+org.opentcs.components.kernel.services.ServiceUnavailableException: Remote service unreachable
+	at org.opentcs.access.rmi.services.AbstractRemoteServiceProxy.findSuitableExceptionFor(AbstractRemoteServiceProxy.java:145)
+	at org.opentcs.access.rmi.services.RemoteKernelServicePortalProxy.fetchEvents(RemoteKernelServicePortalProxy.java:206)
+	at org.opentcs.guing.exchange.KernelEventFetcher$EventFetcherTask.runActualTask(KernelEventFetcher.java:188)
+	at org.opentcs.util.CyclicTask.run(CyclicTask.java:154)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:236)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy44.fetchEvents(Unknown Source)
+	at org.opentcs.access.rmi.services.RemoteKernelServicePortalProxy.fetchEvents(RemoteKernelServicePortalProxy.java:203)
+	... 3 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:222)
+	... 8 more
+
+[20190117-16:56:20-192] WARNING KernelEventFetcher   o.o.a.r.services.RemoteKernelServicePortalProxy.logout(): Not logged in, doing nothing.
+[20190117-16:58:32-125] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "dp_demo" successfully loaded from kernel.
+[20190117-17:31:38-486] INFO    AWT-EventQueue-0     o.o.g.application.OpenTCSView.stop()                   : GUI terminating...
+[20190117-23:39:28-882] INFO    main                 o.o.util.Environment.logSystemInfo()                   : openTCS baseline version: 4.10.0-SNAPSHOT (build date: 2019-01-08 16:31:16), customization '-' version - (build date: -), Java: 1.8.0_181, Oracle Corporation; JVM: 25.181-b13, Oracle Corporation; OS: Windows 10, amd64
+[20190117-23:39:29-759] INFO    main                 o.c.provider.ConfigurationProviderBuilder.build()      : Initializing ConfigurationProvider with org.opentcs.guing.configuration.CachedConfigurationSource source, org.opentcs.guing.configuration.PeriodicalReloadStrategy reload strategy and org.cfg4j.source.context.environment.DefaultEnvironment environment
+[20190117-23:39:30-587] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultImportersExportersModule
+[20190117-23:39:30-652] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.DefaultPluginPanelsModule
+[20190117-23:39:30-740] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.PropertySuggestionsModule
+[20190117-23:39:30-818] INFO    main                 o.o.guing.RunPlantOverview.findRegisteredModules()     : Integrating injection module org.opentcs.guing.transport.OrderCategorySuggestionsModule
+[20190117-23:39:32-331] WARNING main                 o.o.guing.DefaultPlantOverviewInjectionModule.configureSocketConnections(): SSL encryption disabled, connections will not be secured!
+[20190117-23:39:49-674] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.loadgenerator.ContinuousLoadPanelFactory
+[20190117-23:39:49-675] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.statistics.StatisticsPanelFactory
+[20190117-23:39:49-675] INFO    main                 o.o.g.util.PanelRegistry.<init>()                      : Setting up plugin panel factory: org.opentcs.guing.plugins.panels.allocation.ResourceAllocationPanelFactory
+[20190117-23:39:50-049] INFO    main                 o.o.g.exchange.KernelEventFetcher.initialize()         : Initializing...
+[20190117-23:40:09-792] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully persisted.
+[20190117-23:40:15-180] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully loaded from kernel.
+[20190117-23:51:11-709] SEVERE  KernelEventFetcher   o.o.g.exchange.KernelEventFetcher$EventFetcherTask.runActualTask(): Exception fetching events, logging out
+org.opentcs.components.kernel.services.ServiceUnavailableException: Remote service unreachable
+	at org.opentcs.access.rmi.services.AbstractRemoteServiceProxy.findSuitableExceptionFor(AbstractRemoteServiceProxy.java:145)
+	at org.opentcs.access.rmi.services.RemoteKernelServicePortalProxy.fetchEvents(RemoteKernelServicePortalProxy.java:206)
+	at org.opentcs.guing.exchange.KernelEventFetcher$EventFetcherTask.runActualTask(KernelEventFetcher.java:188)
+	at org.opentcs.util.CyclicTask.run(CyclicTask.java:154)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:236)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy44.fetchEvents(Unknown Source)
+	at org.opentcs.access.rmi.services.RemoteKernelServicePortalProxy.fetchEvents(RemoteKernelServicePortalProxy.java:203)
+	... 3 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:222)
+	... 8 more
+
+[20190117-23:51:11-741] WARNING KernelEventFetcher   o.o.a.r.services.RemoteKernelServicePortalProxy.logout(): Not logged in, doing nothing.
+[20190117-23:53:33-854] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully persisted.
+[20190117-23:53:36-486] INFO    AWT-EventQueue-0     o.o.g.application.StatusPanel.setLogMessage()          : Model "Demo-01" successfully loaded from kernel.

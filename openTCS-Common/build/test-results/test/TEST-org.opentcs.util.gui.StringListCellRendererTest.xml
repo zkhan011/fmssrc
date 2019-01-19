@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.util.gui.StringListCellRendererTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:36:49" hostname="DGR-ZISHAN" time="0.103">
+  <properties/>
+  <testcase name="returnsNullForNullValue" classname="org.opentcs.util.gui.StringListCellRendererTest" time="0.096"/>
+  <testcase name="returnsLabelWithNameAsText" classname="org.opentcs.util.gui.StringListCellRendererTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

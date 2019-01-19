@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:32" hostname="DGR-ZISHAN" time="0.122">
+  <properties/>
+  <testcase name="returnsEmptyForUnknownAssignedParkingPosition" classname="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" time="0.105"/>
+  <testcase name="returnsClosestParkingPosition" classname="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" time="0.009"/>
+  <testcase name="returnsEmptyForAllBlocksReserved" classname="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" time="0.006"/>
+  <testcase name="returnsEmptyForUnknownVehiclePosition" classname="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" time="0.0"/>
+  <testcase name="returnsEmptyForNoParkingPositionsFromKernel" classname="org.opentcs.strategies.basic.dispatching.phase.parking.DefaultParkingPositionSupplierTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.opentcs.util.persistence.DrivingCoursePersistenceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.opentcs.util.persistence.DrivingCoursePersistenceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.opentcs.util.persistence.html">org.opentcs.util.persistence</a> &gt; DrivingCoursePersistenceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.436s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testToXml</td>
+<td>0.436s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 17, 2019 10:36:49 AM org.opentcs.util.persistence.DrivingCoursePersistenceTest testToXml
+INFO: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;model version=&quot;0.0.2&quot; name=&quot;Demo&quot;&gt;
+    &lt;point name=&quot;Point1&quot; id=&quot;0&quot; xPosition=&quot;1&quot; yPosition=&quot;2&quot; zPosition=&quot;3&quot; vehicleOrientationAngle=&quot;NaN&quot; type=&quot;HALT_POSITION&quot;&gt;
+        &lt;outgoingPath name=&quot;Path1&quot;/&gt;
+    &lt;/point&gt;
+    &lt;point name=&quot;Point2&quot; id=&quot;0&quot; xPosition=&quot;4&quot; yPosition=&quot;5&quot; zPosition=&quot;6&quot; vehicleOrientationAngle=&quot;NaN&quot; type=&quot;PARK_POSITION&quot;&gt;
+        &lt;outgoingPath name=&quot;Path2&quot;/&gt;
+        &lt;outgoingPath name=&quot;Path3&quot;/&gt;
+    &lt;/point&gt;
+    &lt;path name=&quot;Point1 --- Point2&quot; sourcePoint=&quot;Point1&quot; destinationPoint=&quot;Point2&quot; length=&quot;100&quot; routingCost=&quot;1&quot; maxVelocity=&quot;1000&quot; maxReverseVelocity=&quot;200&quot; locked=&quot;false&quot;&gt;
+        &lt;typeMaxVelocity vehicleType=&quot;VehicleType1&quot; velocity=&quot;100&quot;/&gt;
+        &lt;typeMaxReverseVelocity vehicleType=&quot;VehicleType2&quot; velocity=&quot;200&quot;/&gt;
+        &lt;typeLock vehicleType=&quot;VehicleType1&quot; locked=&quot;true&quot;/&gt;
+        &lt;typeActions vehicleType=&quot;VehicleType1&quot;&gt;
+            &lt;action distance=&quot;500&quot; action=&quot;Action1&quot;&gt;
+                &lt;orientation name=&quot;Orientation1&quot;/&gt;
+            &lt;/action&gt;
+        &lt;/typeActions&gt;
+        &lt;property name=&quot;Property1&quot; value=&quot;Value1&quot;/&gt;
+    &lt;/path&gt;
+    &lt;vehicle name=&quot;Vehicle-01&quot; length=&quot;1000&quot; energyLevelCritical=&quot;30&quot; energyLevelGood=&quot;90&quot; maxVelocity=&quot;0&quot; maxReverseVelocity=&quot;0&quot; type=&quot;&quot;/&gt;
+    &lt;locationType name=&quot;Transfer station&quot;&gt;
+        &lt;allowedOperation name=&quot;NOP&quot;/&gt;
+        &lt;allowedOperation name=&quot;Load cargo&quot;/&gt;
+        &lt;property name=&quot;tcs:defaultLocationSymbol&quot; value=&quot;LOAD_TRANSFER_GENERIC&quot;/&gt;
+    &lt;/locationType&gt;
+    &lt;location name=&quot;Storage 02&quot; xPosition=&quot;100&quot; yPosition=&quot;200&quot; zPosition=&quot;300&quot; type=&quot;Transfer station&quot;&gt;
+        &lt;link point=&quot;Point1&quot;/&gt;
+    &lt;/location&gt;
+    &lt;block name=&quot;Block-001&quot;&gt;
+        &lt;member name=&quot;Point1 --- Point2&quot;/&gt;
+    &lt;/block&gt;
+    &lt;staticRoute name=&quot;StaticRoute1&quot;&gt;
+        &lt;hop name=&quot;Hop1&quot;/&gt;
+    &lt;/staticRoute&gt;
+    &lt;group name=&quot;Group1&quot;&gt;
+        &lt;member name=&quot;Member1&quot;/&gt;
+    &lt;/group&gt;
+    &lt;visualLayout name=&quot;VLayout-01&quot; scaleX=&quot;50.0&quot; scaleY=&quot;50.0&quot;&gt;
+        &lt;modelLayoutElement visualizedObjectName=&quot;Block-0002&quot; layer=&quot;0&quot;&gt;
+            &lt;property name=&quot;COLOR&quot; value=&quot;#FF0000&quot;/&gt;
+        &lt;/modelLayoutElement&gt;
+        &lt;property name=&quot;tcs:vehicleThemeClass&quot; value=&quot;...&quot;/&gt;
+    &lt;/visualLayout&gt;
+&lt;/model&gt;
+
+Jan 17, 2019 10:36:49 AM org.opentcs.util.persistence.DrivingCoursePersistenceTest validateXml
+INFO: XML is valid.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.5</a> at Jan 17, 2019 10:36:49 AM</p>
+</div>
+</div>
+</body>
+</html>
