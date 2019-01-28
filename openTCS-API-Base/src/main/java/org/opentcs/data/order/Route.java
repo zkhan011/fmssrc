@@ -84,6 +84,9 @@ public class Route
     return steps.get(steps.size() - 1).getDestinationPoint();
   }
 
+  
+  
+  
   @Override
   public boolean equals(Object o) {
     if (!(o instanceof Route)) {

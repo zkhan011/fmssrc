@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author zisha
  */
-class AITVTCPCommunication {
+class AITVTCPCommunication{
   
     private static ConcurrentMap<String,AGVCommAdapter> idToNameMap;
     private static ConcurrentMap<AGVCommAdapter,String> NameToIdMap;
@@ -77,7 +77,7 @@ class AITVTCPCommunication {
    
     CapitalizeClient c = new CapitalizeClient(ipaddress);
     c.start();
-    c.sendMessage("Hello this is" + vehicleId);
+    
     
     ConnectedCLient.put(vehicleId,c);
     
@@ -85,7 +85,7 @@ class AITVTCPCommunication {
     
       idToNameMap.get(vehicleId).getProcessModel().setVehicleState(Vehicle.State.IDLE);
       
-      idToNameMap.get(vehicleId).initVehiclePosition("Point-0007");
+      //idToNameMap.get(vehicleId).initVehiclePosition("Point-0007");
     
 
                      
@@ -146,23 +146,49 @@ class AITVTCPCommunication {
        ConnectedCLient.get(NameToIdMap.get(adapter)).sendMessage(vehicleId);
         
           
-         
-         
+        
        
         
        }
-   public static boolean ExecuteCommand(AGVCommAdapter adapter, String vehicleId) throws IOException{
+   
+ 
+   
+   
+   
+       public static boolean ExecuteCommand(String vehicleId) throws IOException{
      
        
-       System.out.println("sending message to adpter" + adapter);
-       return ConnectedCLient.get(NameToIdMap.get(adapter)).readCommand();
+       
+        return true;
         
           
          
          
        
-        
+         
        }
+   
+  /// returning hashmap to udp for updataing positions. 
+ public static ConcurrentMap<String, AGVCommAdapter> getCurrentVehicleAdapterForPositionUDP(){
+   
+   
+   return idToNameMap;
+   
+ }
+ 
+ public static AGVCommAdapter getAGVCommAdapterName(String vehiclename){
+   
+   
+   return idToNameMap.get(vehiclename);
+   
+   
+   
+ }
+ 
+ 
+   
+   
+   
    
    
    

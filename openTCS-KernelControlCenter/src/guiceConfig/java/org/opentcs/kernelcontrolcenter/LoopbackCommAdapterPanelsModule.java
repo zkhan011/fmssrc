@@ -8,6 +8,7 @@
 package org.opentcs.kernelcontrolcenter;
 
 import org.opentcs.customizations.controlcenter.ControlCenterInjectionModule;
+import org.opentcs.virtualvehicle.AGVCommunicationAdapterPanelFactory;
 import org.opentcs.virtualvehicle.LoopbackCommAdapterPanelFactory;
 
 /**
@@ -21,7 +22,7 @@ public class LoopbackCommAdapterPanelsModule
   // tag::documentation_createCommAdapterPanelsModule[]
   @Override
   protected void configure() {
-    commAdapterPanelFactoryBinder().addBinding().to(LoopbackCommAdapterPanelFactory.class);
+    commAdapterPanelFactoryBinder().addBinding().to(AGVCommunicationAdapterPanelFactory.class);
   }
   // end::documentation_createCommAdapterPanelsModule[]
 }

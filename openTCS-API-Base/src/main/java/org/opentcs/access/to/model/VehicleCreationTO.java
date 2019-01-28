@@ -185,6 +185,11 @@ public class VehicleCreationTO
     return length;
   }
 
+  
+   public String getVehicleIpAddress() {
+    return vehicleIp ;
+  }
+  
   /**
    * Sets the vehicle's length (in mm).
    *
@@ -373,4 +378,18 @@ public class VehicleCreationTO
                                  maxReverseVelocity,
                                  vehicleIp );
   }
+  
+  public VehicleCreationTO withVehicleIp(String vehicleIp) {
+    
+    return new VehicleCreationTO(getName(),
+                                 getModifiableProperties(),
+                                 length,
+                                 energyLevelCritical,
+                                 energyLevelGood,
+                                 maxVelocity,
+                                 maxReverseVelocity,
+                                 vehicleIp );
+  }
+  
+  
 }

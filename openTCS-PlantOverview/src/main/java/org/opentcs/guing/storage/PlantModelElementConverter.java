@@ -147,6 +147,9 @@ public class PlantModelElementConverter {
     VehicleModel model = new VehicleModel();
 
     model.setName(vehicleTO.getName());
+    
+    model.getVehicleIpAddress().setValue(vehicleTO.getVehicleIpAddress());
+   
     model.getPropertyLength().setValueAndUnit(vehicleTO.getLength(), LengthProperty.Unit.MM);
     model.getPropertyMaxVelocity().setValueAndUnit(((double) vehicleTO.getMaxVelocity()),
                                                    SpeedProperty.Unit.MM_S);

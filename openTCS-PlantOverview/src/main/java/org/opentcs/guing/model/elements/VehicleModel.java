@@ -63,6 +63,7 @@ public class VehicleModel
   public static final String MAXIMUM_VELOCITY = "MaximumVelocity";
   public static final String MAXIMUM_REVERSE_VELOCITY = "MaximumReverseVelocity";
   public static final String PROCESSABLE_CATEGORIES = "ProcessableCategories";
+  public static final String VEHICLE_IP = "VehicleIp";
 
   /**
    * The point the vehicle currently remains on.
@@ -100,6 +101,9 @@ public class VehicleModel
    * A reference to the vehicle.
    */
   private Vehicle vehicle = new Vehicle("Dummy");
+  
+  
+  private String vehicleip;
 
   /**
    * Creates a new instance.
@@ -297,6 +301,9 @@ public class VehicleModel
         && vehicle.getIntegrationLevel() == Vehicle.IntegrationLevel.TO_BE_UTILIZED
         && !vehicle.hasProcState(Vehicle.ProcState.UNAVAILABLE);
   }
+  
+ 
+  
 
   @Override // AbstractModelComponent
   public String getTreeViewName() {
@@ -393,6 +400,14 @@ public class VehicleModel
   public KeyValueSetProperty getPropertyMiscellaneous() {
     return (KeyValueSetProperty) getProperty(MISCELLANEOUS);
   }
+  
+  public StringProperty getVehicleIpAddress(){
+    
+    return (StringProperty) getProperty(VEHICLE_IP);
+    
+  }
+  
+  
 
   private void createProperties() {
     ResourceBundleUtil bundle = ResourceBundleUtil.getBundle();
@@ -474,10 +489,10 @@ public class VehicleModel
     SelectionProperty<Vehicle.IntegrationLevel> pIntegrationLevel
         = new SelectionProperty<>(this,
                                   Arrays.asList(Vehicle.IntegrationLevel.values()),
-                                  Vehicle.IntegrationLevel.TO_BE_RESPECTED);
+                                  Vehicle.IntegrationLevel.TO_BE_UTILIZED);
     pIntegrationLevel.setDescription(bundle.getString("vehicle.integrationLevel.text"));
     pIntegrationLevel.setHelptext(bundle.getString("vehicle.integrationLevel.helptext"));
-    pIntegrationLevel.setModellingEditable(false);
+    pIntegrationLevel.setModellingEditable(true);
     setProperty(INTEGRATION_LEVEL, pIntegrationLevel);
 
     StringProperty pPoint = new StringProperty(this);
@@ -527,6 +542,16 @@ public class VehicleModel
     pProcessableCategories.setModellingEditable(false);
     pProcessableCategories.setOperatingEditable(true);
     setProperty(PROCESSABLE_CATEGORIES, pProcessableCategories);
+    
+    StringProperty pVehicleIp = new StringProperty(this);
+    pVehicleIp.setDescription(bundle.getString("vehicle.IP.text"));
+    pVehicleIp.setHelptext(bundle.getString("vehicle.IP.helptext"));
+    pVehicleIp.setModellingEditable(true);
+    pVehicleIp.setOperatingEditable(true);
+    setProperty(VEHICLE_IP, pVehicleIp);
+    
+    
+    
   }
 
   public enum EnergyState {

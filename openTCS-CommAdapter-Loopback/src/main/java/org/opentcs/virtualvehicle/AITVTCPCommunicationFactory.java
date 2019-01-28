@@ -7,6 +7,7 @@
  */
 package org.opentcs.virtualvehicle;
 
+import java.io.IOException;
 import org.opentcs.data.model.Vehicle;
 
 
@@ -26,7 +27,7 @@ public class AITVTCPCommunicationFactory {
     private String vehicleId ;
     public String ipaddress;    
     
-    public AITVTCPCommunicationFactory(AGVCommAdapter CommunicationAdapter, String vehicleName , String vehicleIp){
+    public AITVTCPCommunicationFactory(AGVCommAdapter CommunicationAdapter, String vehicleName , String vehicleIp) throws IOException{
        System.out.println("ip Method" + vehicleName);
       
          this.ipaddress = vehicleIp;
@@ -37,7 +38,7 @@ public class AITVTCPCommunicationFactory {
           System.out.println("Sync Method");
           TCP_COMMUNICATION.connectToCommunicationAdapter(CommunicationAdapter,vehicleName); 
            System.out.println("Sync Method2");
-         //  TCP_COMMUNICATION.connect("127.0.0.1");
+        
          
         
          
@@ -48,15 +49,12 @@ public class AITVTCPCommunicationFactory {
           System.out.println("Connect Method" + this.ipaddress);
         } catch (Exception e){
           System.out.println("Error Unnable to connect on the port " + ipaddress);
+          TCP_COMMUNICATION.disconnectAdapter(CommunicationAdapter, this.vehicleId);
           e.printStackTrace();
         }
     }
 
-  static void setPortId(String text) {
-    System.out.println("Setting Port");
-     System.out.println("port selection Method");
-    // this.ipaddress = "127.0.0.1";
-  }
+  
 
   AITVTCPCommunication getSerialCommunication() {
     return TCP_COMMUNICATION;

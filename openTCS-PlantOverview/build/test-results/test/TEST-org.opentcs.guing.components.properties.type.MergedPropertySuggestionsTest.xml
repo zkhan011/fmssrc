@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opentcs.guing.components.properties.type.MergedPropertySuggestionsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:24" hostname="DGR-ZISHAN" time="0.017">
-  <properties/>
-  <testcase name="shouldRemainEmptyForEmptySuggestions" classname="org.opentcs.guing.components.properties.type.MergedPropertySuggestionsTest" time="0.002"/>
-  <testcase name="shouldRemainEmptyForNoSuggestions" classname="org.opentcs.guing.components.properties.type.MergedPropertySuggestionsTest" time="0.0"/>
-  <testcase name="shouldMergeSuggestions" classname="org.opentcs.guing.components.properties.type.MergedPropertySuggestionsTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -27,7 +27,7 @@ public class LoopbackVehicleModel
    * Indicates the current Ipaddress for the attached vehicle
    */
   
-
+private String vehicleIp;
   
   
 
@@ -72,7 +72,7 @@ public class LoopbackVehicleModel
     this.unloadOperation
         = attachedVehicle.getProperty(LoopbackAdapterConstants.PROPKEY_UNLOAD_OPERATION);
     
-    
+    this.vehicleIp = attachedVehicle.getvehicleipaddress();
     
     this.v1 = attachedVehicle;
   }
@@ -278,21 +278,27 @@ public class LoopbackVehicleModel
                                                   velocityHistory);
   }
 
-  public synchronized String setVehicleIpAddress(String vehicleIpaddress , AGVCommAdapter adapter) {
+  public synchronized void setVehicleIpAddress(String vehicleIpaddress , AGVCommAdapter adapter) {
     
    v1.setvehicleipaddress(vehicleIpaddress);
-   getPropertyChangeSupport().firePropertyChange(Attribute.VEHICLE_IP.name(),
-                                                  null,
-                                                  vehicleIpaddress);
+  
    
-    
+   this.vehicleIp =  vehicleIpaddress;
    
-   return vehicleIpaddress;
+ 
  
   }
   
   
-  
+  public synchronized String getvehicleipaddress(){
+    
+    if (vehicleIp==null){
+      vehicleIp = "127.0.0.1";
+      
+      return vehicleIp;
+    }
+    return vehicleIp;
+  }
     
 
 

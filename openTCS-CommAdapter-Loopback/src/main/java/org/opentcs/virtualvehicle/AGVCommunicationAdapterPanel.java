@@ -33,6 +33,7 @@ import org.opentcs.util.gui.StringListCellRenderer;
 import org.opentcs.virtualvehicle.inputcomponents.DropdownListInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.InputDialog;
 import org.opentcs.virtualvehicle.inputcomponents.InputPanel;
+import org.opentcs.virtualvehicle.inputcomponents.IpAddressTextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.SingleTextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.TextInputPanel;
 import org.opentcs.virtualvehicle.inputcomponents.TripleTextInputPanel;
@@ -84,6 +85,7 @@ public class AGVCommunicationAdapterPanel  extends org.opentcs.drivers.vehicle.V
     opTimeTxt.setText(String.valueOf(vehicleModel.getOperatingTime()));
     maxAccelTxt.setText(String.valueOf(vehicleModel.getMaxAcceleration()));
     maxDecelTxt.setText(String.valueOf(vehicleModel.getMaxDecceleration()));
+   
     updateCommAdapterEnabled(vehicleModel.isCommAdapterEnabled());
   }
 
@@ -125,6 +127,13 @@ public class AGVCommunicationAdapterPanel  extends org.opentcs.drivers.vehicle.V
                             LoopbackVehicleModel.Attribute.VEHICLE_PAUSED.name())) {
       updateVehiclePaused(vm.isVehiclePaused());
     }
+    else if (Objects.equals(evt.getPropertyName(),
+                            LoopbackVehicleModel.Attribute.VEHICLE_IP.name())) {
+      updateVehicleIpAddress(vm.getvehicleipaddress());
+    }
+    
+    
+    
   }
 
   private void updateVehicleProcessModelData(PropertyChangeEvent evt) {
@@ -157,6 +166,7 @@ public class AGVCommunicationAdapterPanel  extends org.opentcs.drivers.vehicle.V
                             VehicleProcessModel.Attribute.LOAD_HANDLING_DEVICES.name())) {
       updateVehicleLoadHandlingDevice(vpm.getVehicleLoadHandlingDevices());
     }
+    
   }
 
   private void updateVehicleLoadHandlingDevice(List<LoadHandlingDevice> devices) {
@@ -187,7 +197,7 @@ public class AGVCommunicationAdapterPanel  extends org.opentcs.drivers.vehicle.V
       else {
         for (Point curPoint : objectService.fetchObjects(Point.class)) {
           if (curPoint.getName().equals(vehiclePosition)) {
-            positionTxt.setText(curPoint.getName());
+            positionTxt.setText(curPoint.getPosition().toString());
             break;
           }
         }
@@ -267,6 +277,7 @@ public class AGVCommunicationAdapterPanel  extends org.opentcs.drivers.vehicle.V
     SwingUtilities.invokeLater(() -> precisePosTextArea.setEnabled(enabled));
     SwingUtilities.invokeLater(() -> orientationAngleTxt.setEnabled(enabled));
     SwingUtilities.invokeLater(() -> pauseVehicleCheckBox.setEnabled(enabled));
+ 
   }
 
   // CHECKSTYLE:OFF
@@ -1126,7 +1137,53 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {
     else if (evt.getStateChange() == java.awt.event.ItemEvent.DESELECTED) {
       vehicleModel.setVehiclePaused(false);
     }
-  }                                                     
+  }     
+  
+  private void vehicleIpAddressTxt1MouseClicked(java.awt.event.MouseEvent evt) {                                                  
+    if (!vehicleIpAddressTxt1.isEnabled()) {
+        String ip = vehicleModel.getvehicleipaddress();
+      // Create panel and dialog
+      IpAddressTextInputPanel.Builder builder
+          = new IpAddressTextInputPanel.Builder(bundle.getString("ipAddressBoxTitle"));
+      
+      builder.setLabels(bundle.getString("vehicleIpAddress"));
+      builder.enableResetButton(null);
+      builder.enableValidation(TextInputPanel.TextInputValidator.REGEX_IPV4);
+      if (ip == null) {
+        builder.setInitialValues("127.0.0.1");
+      }
+      InputPanel panel = builder.build();
+      InputDialog dialog = new InputDialog(panel);
+      dialog.setVisible(true);
+      // Get dialog result and set vehicle ip address panel
+      if (dialog.getReturnStatus() == InputDialog.ReturnStatus.ACCEPTED) {
+        if (dialog.getInput() == null) {
+          // Clear precise position
+          vehicleModel.setVehicleIpAddress("127.0.0.1", commAdapter);
+        }
+        else {
+          // Set new precise position
+          String x;
+          String[] newPos = (String[]) dialog.getInput();
+          try {
+            x = newPos[0];
+            vehicleIpAddressTxt1.setText(newPos[0]);
+           
+          }
+          catch (NumberFormatException | NullPointerException e) {
+            return;
+          }
+
+          vehicleModel.setVehicleIpAddress(x,commAdapter);
+        }
+      }
+  }                                                 
+  }
+  
+  
+  
+  
+  
 
   private void energyLevelTxtMouseClicked(java.awt.event.MouseEvent evt) {                                            
     if (energyLevelTxt.isEnabled()) {
@@ -1221,7 +1278,7 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {
         .append("Z: ").append(zS);
     precisePosTextArea.setText(text.toString());
   }
-  // Variables declaration - do not modify                     
+ // Variables declaration - do not modify                     
   private javax.swing.JPanel PropsPowerInnerContainerPanel;
   private javax.swing.JPanel PropsPowerOuterContainerPanel;
   private javax.swing.JTextField appendixTxt;
@@ -1284,9 +1341,26 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {
   private javax.swing.JButton triggerButton;
   private javax.swing.JTextField valueTextField;
   private javax.swing.JPanel vehicleBahaviourPanel;
+  private javax.swing.JLabel vehicleIpAddressLbl1;
+  private javax.swing.JTextField vehicleIpAddressTxt1;
   private javax.swing.JPanel vehiclePropsPanel;
+  private javax.swing.JPanel vehiclePropsPanel1;
   private javax.swing.JPanel vehicleStatePanel;
   // End of variables declaration                   
   // CHECKSTYLE:ON
+
+  // End of variables declaration                   
+  // CHECKSTYLE:ON
+
+  private void updateVehicleIpAddress(String vehicleipaddress) {
+    
+    SwingUtilities.invokeLater(() -> {
+    
+         vehicleIpAddressTxt1.setText(vehicleipaddress);
+
+    });
+   
+   
+  }
 
 }

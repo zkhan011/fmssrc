@@ -246,18 +246,10 @@
     <path name="Point-0054 --- Point-0048" sourcePoint="Point-0054" destinationPoint="Point-0048" length="3752" routingCost="1" maxVelocity="1000" maxReverseVelocity="0" locked="false"/>
     <path name="Point-0055 --- Point-0046" sourcePoint="Point-0055" destinationPoint="Point-0046" length="8443" routingCost="1" maxVelocity="1000" maxReverseVelocity="0" locked="false"/>
     <path name="Point-0056 --- Point-0023" sourcePoint="Point-0056" destinationPoint="Point-0023" length="6882" routingCost="1" maxVelocity="1000" maxReverseVelocity="0" locked="false"/>
-    <vehicle name="Vehicle-01" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type="">
-        <property name="tcs:preferredAdapterClass" value="org.opentcs.virtualvehicle.AGVCommAdapterFactory"/>
-    </vehicle>
-    <vehicle name="Vehicle-02" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type="">
-        <property name="tcs:preferredAdapterClass" value="org.opentcs.virtualvehicle.AGVCommAdapterFactory"/>
-    </vehicle>
-    <vehicle name="Vehicle-03" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type="">
-        <property name="tcs:preferredAdapterClass" value="org.opentcs.virtualvehicle.AGVCommAdapterFactory"/>
-    </vehicle>
-    <vehicle name="Vehicle-04" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type="">
-        <property name="tcs:preferredAdapterClass" value="org.opentcs.virtualvehicle.AGVCommAdapterFactory"/>
-    </vehicle>
+    <vehicle name="Vehicle-01" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type=""/>
+    <vehicle name="Vehicle-02" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type=""/>
+    <vehicle name="Vehicle-03" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type=""/>
+    <vehicle name="Vehicle-04" length="1000" energyLevelCritical="30" energyLevelGood="90" maxVelocity="1000" maxReverseVelocity="1000" type=""/>
     <locationType name="Recharge station">
         <allowedOperation name="NOP"/>
         <allowedOperation name="Charge:100"/>

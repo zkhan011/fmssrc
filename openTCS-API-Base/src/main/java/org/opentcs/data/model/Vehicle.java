@@ -149,6 +149,8 @@ public class Vehicle
    * Set to <code>Double.NaN</code> if the vehicle hasn't provided an orientation angle.
    */
   private double orientationAngle;
+  
+
 
   /**
    * Creates a new vehicle.
@@ -161,8 +163,8 @@ public class Vehicle
   @ScheduledApiChange(when = "5.0")
   public Vehicle(int objectID, String name) {
     super(objectID, name);
+    this.vehicleip = "127.0.0.1";
     this.length = 1000;
-    this.vehicleip = null;
     this.energyLevelGood = 90;
     this.energyLevelCritical = 30;
     this.maxVelocity = 1000;
@@ -174,7 +176,7 @@ public class Vehicle
     this.routeProgressIndex = ROUTE_INDEX_DEFAULT;
     this.adapterState = VehicleCommAdapter.State.UNKNOWN;
     this.state = State.UNKNOWN;
-    this.integrationLevel = IntegrationLevel.TO_BE_RESPECTED;
+    this.integrationLevel = IntegrationLevel.TO_BE_UTILIZED;
     this.currentPosition = null;
     this.nextPosition = null;
     this.precisePosition = null;
@@ -191,7 +193,7 @@ public class Vehicle
   @SuppressWarnings("deprecation")
   public Vehicle(String name) {
     super(name);
-    this.vehicleip = null;
+    this.vehicleip = "127.0.0.1"; 
     this.length = 1000;
     this.energyLevelGood = 90;
     this.energyLevelCritical = 30;
@@ -204,7 +206,7 @@ public class Vehicle
     this.routeProgressIndex = ROUTE_INDEX_DEFAULT;
     this.adapterState = VehicleCommAdapter.State.UNKNOWN;
     this.state = State.UNKNOWN;
-    this.integrationLevel = IntegrationLevel.TO_BE_RESPECTED;
+    this.integrationLevel = IntegrationLevel.TO_BE_UTILIZED;
     this.currentPosition = null;
     this.nextPosition = null;
     this.precisePosition = null;
@@ -239,7 +241,7 @@ public class Vehicle
                   int energyLevel,
                   List<LoadHandlingDevice> loadHandlingDevices) {
     super(objectID, name, properties);
-    this.vehicleip = vehicleip;
+    this.vehicleip = requireNonNull(vehicleip, "vehicleip");
     this.length = checkInRange(length, 1, Integer.MAX_VALUE, "length");
     this.energyLevelGood = checkInRange(energyLevelGood, 0, 100, "energyLevelGood");
     this.energyLevelCritical = checkInRange(energyLevelCritical, 0, 100, "energyLevelCritical");
@@ -1515,6 +1517,43 @@ public class Vehicle
                        loadHandlingDevices);
   }
 
+   /**
+   * Creates a copy of this object, with the given orientation angle.
+   *
+   * @param orientationAngle The value to be set in the copy.
+   * @return A copy of this object, differing in the given value.
+   */
+  public Vehicle withVehicleIpAddress(String vehicleip) {
+    return new Vehicle(getIdWithoutDeprecationWarning(),
+                       getName(),
+                       getProperties(),
+                       vehicleip,
+                       length,
+                       energyLevelGood,
+                       energyLevelCritical,
+                       maxVelocity,
+                       maxReverseVelocity,
+                       rechargeOperation,
+                       procState,
+                       transportOrder,
+                       orderSequence,
+                       processableCategories,
+                       routeProgressIndex,
+                       adapterState,
+                       state,
+                       integrationLevel,
+                       currentPosition,
+                       nextPosition,
+                       precisePosition,
+                       orientationAngle,
+                       energyLevel,
+                       loadHandlingDevices);
+  }
+
+  
+  
+  
+  
   /**
    * Checks if this vehicle is currently processing any transport order.
    *
@@ -1599,15 +1638,20 @@ public class Vehicle
         + '}';
   }
 
+  public void setvehicleipaddress(String vehicleip) {
+    
+    this.vehicleip = vehicleip;
+  } 
+
+  
+  
+  
+  
   public String getvehicleipaddress() {
     return vehicleip;
   }
 
-   public void setvehicleipaddress(String ip) {
-    
-    this.vehicleip = ip;
-  }
-  
+   
   
   
   

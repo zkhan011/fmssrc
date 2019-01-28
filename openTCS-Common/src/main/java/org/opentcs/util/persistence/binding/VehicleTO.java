@@ -22,9 +22,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlType(
       propOrder = {"name", "id", "length", "energyLevelCritical", "energyLevelGood", "maxVelocity", "maxReverseVelocity",
-                   "properties"})
+                   "properties","vehicleIpAddress"})
 public class VehicleTO
     extends PlantModelElementTO {
+  
+  private String vehicleIp;
 
   //max velocity in mm/s.
   private int maxVelocity;
@@ -46,6 +48,16 @@ public class VehicleTO
     return this;
   }
   
+   @XmlAttribute
+  public String getVehicleIpAddress() {
+    return vehicleIp;
+  }
+
+  public VehicleTO setVehicleIpAddress(@Nonnull String vehicleIp) {
+   
+    this.vehicleIp = vehicleIp;
+    return this;
+  }
   
   
   

@@ -79,23 +79,34 @@ public class CapitalizeClient extends Thread  {
      System.out.println("Start, type and press Enter key");
      while(!ct){
        
-      // System.out.print(ct);
-      // sendMessage("Hi");
-
-         //readCommand();
-        // if (counter<=4){
-        //  sendMessage("Hello" + counter);
+       
+       try {
+         System.out.println(this.receiveRead.readLine().toLowerCase());
+         
+         
+         // System.out.print(ct);
+         // sendMessage("Hi");
+         
+            readCommand();
+         // if (counter<=4){
+         //  sendMessage("Hello" + counter);
          // counter++;
          
-        // }
+         // }
          
-        // else{
-           
-           //sendMessage("");
-           // counter=0;
-           
+         // else{
          
-       //  }
+         //sendMessage("");
+         // counter=0;
+         
+         
+         //  }
+       }
+       catch (IOException ex) {
+         Logger.getLogger(CapitalizeClient.class.getName()).log(Level.SEVERE, null, ex);
+         this.pwrite.close();
+         this.ct = true;
+       }
       
         
        
@@ -117,7 +128,8 @@ public class CapitalizeClient extends Thread  {
      
      }
      finally{
-     this.sock.close();
+      this.pwrite.close();  
+      this.sock.close();
      }
      
    }
@@ -126,6 +138,7 @@ public class CapitalizeClient extends Thread  {
      
      System.out.println("org.opentcs.virtualvehicle.CapitalizeClient.send");
      this.pwrite.println(message);
+     
      this.pwrite.flush();
      
      
@@ -147,7 +160,10 @@ public class CapitalizeClient extends Thread  {
    }
     public Boolean readCommand() throws IOException {
       
-      System.out.println(this.receiveRead.readLine().toLowerCase());
+      
+     if (this.receiveRead!=null){ 
+      
+     System.out.println(this.receiveRead.readLine().toLowerCase());
      if (this.receiveRead.readLine().toLowerCase() == "yes")
      {
         
@@ -155,7 +171,7 @@ public class CapitalizeClient extends Thread  {
  
        
      }
- 
+    }
         
      return false;
         

@@ -217,6 +217,7 @@ public class UnifiedModelComponentConverter {
     VehicleTO vehicle = new VehicleTO();
 
     vehicle.setName(vehicleModel.getPropertyName().getText());
+    vehicle.setVehicleIpAddress(vehicleModel.getVehicleIpAddress().getText());
     vehicle.setLength((long) vehicleModel.getPropertyLength().getValueByUnit(LengthProperty.Unit.MM));
     vehicle.setMaxVelocity(((Double) vehicleModel.getPropertyMaxVelocity().getValueByUnit(Unit.MM_S)).intValue());
     vehicle.setMaxReverseVelocity(((Double) vehicleModel.getPropertyMaxReverseVelocity().getValueByUnit(Unit.MM_S)).intValue());
@@ -628,6 +629,8 @@ public class UnifiedModelComponentConverter {
     VehicleModel model = new VehicleModel();
 
     model.getPropertyName().setText(vehicleTO.getName());
+    model.getVehicleIpAddress().setText(vehicleTO.getVehicleIpAddress());
+   
     model.getPropertyLength().setValueAndUnit(vehicleTO.getLength(), LengthProperty.Unit.MM);
     model.getPropertyMaxVelocity().setValueAndUnit(((double) vehicleTO.getMaxVelocity()),
                                                    Unit.MM_S);

@@ -76,6 +76,7 @@ public class VehicleAdapter
 
     try {
       model.getPropertyName().setText(vehicle.getName());
+      model.getVehicleIpAddress().setText(vehicle.getvehicleipaddress());
       model.getPropertyLength().setValueAndUnit(vehicle.getLength(), LengthProperty.Unit.MM);
       model.getPropertyMaxVelocity().setValueAndUnit(vehicle.getMaxVelocity(), Unit.MM_S);
       model.getPropertyMaxReverseVelocity().setValueAndUnit(vehicle.getMaxReverseVelocity(),
@@ -138,6 +139,7 @@ public class VehicleAdapter
                 .withMaxVelocity(getMaximumVelocity(vehicleModel))
                 .withMaxReverseVelocity(getMaximumReverseVelocity(vehicleModel))
                 .withProperties(getKernelProperties(vehicleModel))
+                .withVehicleIp(getVehicleIp(vehicleModel))
         )
         .withVisualLayouts(updatedLayouts(vehicleModel, plantModel.getVisualLayouts()));
   }
@@ -249,6 +251,13 @@ public class VehicleAdapter
   private int getLength(VehicleModel model) {
     return ((Double) model.getPropertyLength().getValueByUnit(LengthProperty.Unit.MM))
         .intValue();
+  }
+  
+  
+  private String getVehicleIp(VehicleModel model){
+    
+    
+    return ((String) model.getVehicleIpAddress().toString());
   }
 
   private int getMaximumReverseVelocity(VehicleModel model) {

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opentcs.strategies.basic.dispatching.phase.assignment.priorization.CandidateComparatorByVehicleNameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:32" hostname="DGR-ZISHAN" time="0.002">
-  <properties/>
-  <testcase name="sortVehicleNamesAlphabetically" classname="org.opentcs.strategies.basic.dispatching.phase.assignment.priorization.CandidateComparatorByVehicleNameTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

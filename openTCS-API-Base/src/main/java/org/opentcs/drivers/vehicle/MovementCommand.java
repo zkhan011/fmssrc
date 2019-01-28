@@ -223,6 +223,12 @@ public class MovementCommand {
     return finalDestination;
   }
 
+  
+  
+  
+  
+  
+  
   /**
    * Returns the destination location of the whole drive order.
    *
@@ -284,7 +290,8 @@ public class MovementCommand {
         + ", finalDestinationLocation=" + finalDestinationLocation
         + ", finalOperation=" + finalOperation
         + ", properties=" + properties
-        + '}';
+      
+        + '}'   + ",<EOR><EOF>";
   }
 
   /**

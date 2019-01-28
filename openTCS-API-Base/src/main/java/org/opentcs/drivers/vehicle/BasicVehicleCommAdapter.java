@@ -172,6 +172,7 @@ public abstract class BasicVehicleCommAdapter
       return;
     }
     connectVehicle();
+    
     commandDispatcherTask = new CommandDispatcherTask();
     Thread commandDispatcherThread = new Thread(commandDispatcherTask,
                                                 getName() + "-commandDispatcher");
@@ -225,6 +226,7 @@ public abstract class BasicVehicleCommAdapter
         .setPrecisePosition(getProcessModel().getVehiclePrecisePosition())
         .setVehiclePosition(getProcessModel().getVehiclePosition())
         .setVehicleState(getProcessModel().getVehicleState());
+        
   }
 
   @Override

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opentcs.documentation.CreateTransportOrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-17T06:37:01" hostname="DGR-ZISHAN" time="0.005">
-  <properties/>
-  <testcase name="shouldCreateAndActivateTransportOrder" classname="org.opentcs.documentation.CreateTransportOrderTest" time="0.004"/>
-  <testcase name="shouldCreateTransportOrderToAPoint" classname="org.opentcs.documentation.CreateTransportOrderTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
