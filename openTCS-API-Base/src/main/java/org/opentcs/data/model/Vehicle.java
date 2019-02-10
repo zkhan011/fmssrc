@@ -1517,39 +1517,6 @@ public class Vehicle
                        loadHandlingDevices);
   }
 
-   /**
-   * Creates a copy of this object, with the given orientation angle.
-   *
-   * @param orientationAngle The value to be set in the copy.
-   * @return A copy of this object, differing in the given value.
-   */
-  public Vehicle withVehicleIpAddress(String vehicleip) {
-    return new Vehicle(getIdWithoutDeprecationWarning(),
-                       getName(),
-                       getProperties(),
-                       vehicleip,
-                       length,
-                       energyLevelGood,
-                       energyLevelCritical,
-                       maxVelocity,
-                       maxReverseVelocity,
-                       rechargeOperation,
-                       procState,
-                       transportOrder,
-                       orderSequence,
-                       processableCategories,
-                       routeProgressIndex,
-                       adapterState,
-                       state,
-                       integrationLevel,
-                       currentPosition,
-                       nextPosition,
-                       precisePosition,
-                       orientationAngle,
-                       energyLevel,
-                       loadHandlingDevices);
-  }
-
   
   
   

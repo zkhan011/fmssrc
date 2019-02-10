@@ -61,6 +61,10 @@ public class LoopbackVehicleModelTO
    * Whether the vehicle is paused or not.
    */
   private boolean vehiclePaused;
+  /**
+   * set vehicle port from kernel center
+   */
+  private String vehiclePort;
 
   public boolean isSingleStepModeEnabled() {
     return singleStepModeEnabled;
@@ -151,6 +155,17 @@ public class LoopbackVehicleModelTO
   public String getVehicleIpAddress() {
     return vehicleIpAddress;
   }
+
+  public String getVehiclePort() {
+   return vehiclePort;
+  }
+  
+  public LoopbackVehicleModelTO setVehiclePort(String vehiclePort) {
+    this.vehiclePort = vehiclePort;
+    return this;
+  }
+  
+  
   
   
 }

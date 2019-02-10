@@ -281,7 +281,7 @@ private String vehicleIp;
   public synchronized void setVehicleIpAddress(String vehicleIpaddress , AGVCommAdapter adapter) {
     
    v1.setvehicleipaddress(vehicleIpaddress);
-  
+
    
    this.vehicleIp =  vehicleIpaddress;
    
@@ -367,6 +367,6 @@ private String vehicleIp;
     /**
      * Indicates a change of the virtual vehicle's velocity history.
      */
-    VELOCITY_HISTORY, VEHICLE_IP,
+    VELOCITY_HISTORY, VEHICLE_IP,VEHICLE_PORT,
   }
 }

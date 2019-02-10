@@ -177,8 +177,13 @@ public abstract class BasicVehicleCommAdapter
     Thread commandDispatcherThread = new Thread(commandDispatcherTask,
                                                 getName() + "-commandDispatcher");
     commandDispatcherThread.start();
+    
+    if (isVehicleConnected()){
     enabled = true;
     getProcessModel().setCommAdapterEnabled(true);
+
+    
+    }
   }
 
   /**

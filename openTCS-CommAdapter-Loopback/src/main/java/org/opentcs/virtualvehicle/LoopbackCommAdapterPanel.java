@@ -168,6 +168,13 @@ public class LoopbackCommAdapterPanel
       
       updateVehicleIp(processModel.getVehicleIpAddress());
     }
+    else if (Objects.equals(attributeChanged,
+                            LoopbackVehicleModel.Attribute.VEHICLE_PORT.name())) {
+      
+      updateVehiclePort(processModel.getVehiclePort());
+    }
+    
+    
     
     
     
@@ -273,6 +280,18 @@ public class LoopbackCommAdapterPanel
     });
   }
   
+   private void updateVehiclePort(String port) {
+    SwingUtilities.invokeLater(() -> {
+      if (port == null) {
+         vehiclePortTxt1.setText("11000");
+      }
+      else {
+          vehiclePortTxt1.setText(port);
+          
+      }
+    });
+  }
+   
   
   
   
@@ -386,6 +405,8 @@ public class LoopbackCommAdapterPanel
     vehiclePropsPanel1 = new javax.swing.JPanel();
     vehicleIpAddressLbl1 = new javax.swing.JLabel();
     vehicleIpAddressTxt1 = new javax.swing.JTextField();
+    vehiclePortLbl1 = new javax.swing.JLabel();
+    vehiclePortTxt1 = new javax.swing.JTextField();
     profilesContainerPanel = new javax.swing.JPanel();
     filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
     vehicleStatePanel = new javax.swing.JPanel();
@@ -598,12 +619,13 @@ public class LoopbackCommAdapterPanel
     vehiclePropsPanel1.setLayout(new java.awt.GridBagLayout());
 
     vehicleIpAddressLbl1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-    vehicleIpAddressLbl1.setText(BUNDLE.getString("maxFwdVelocityLabel")); // NOI18N
+    vehicleIpAddressLbl1.setText(BUNDLE.getString("vehicleIpAddressLbl1")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    gridBagConstraints.weightx = 1.0;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
     vehiclePropsPanel1.add(vehicleIpAddressLbl1, gridBagConstraints);
+    vehicleIpAddressLbl1.getAccessibleContext().setAccessibleName("Vehicle IP Address");
+    vehicleIpAddressLbl1.getAccessibleContext().setAccessibleDescription("");
 
     vehicleIpAddressTxt1.setEditable(false);
     vehicleIpAddressTxt1.setText("127.0.0.1");
@@ -615,9 +637,22 @@ public class LoopbackCommAdapterPanel
       }
     });
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.gridwidth = 3;
     vehiclePropsPanel1.add(vehicleIpAddressTxt1, gridBagConstraints);
+
+    vehiclePortLbl1.setText("Vehicle Port:");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridy = 1;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    vehiclePropsPanel1.add(vehiclePortLbl1, gridBagConstraints);
+
+    vehiclePortTxt1.setText("11000");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridy = 1;
+    gridBagConstraints.gridwidth = 3;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    vehiclePropsPanel1.add(vehiclePortTxt1, gridBagConstraints);
 
     PropsPowerInnerContainerPanel.add(vehiclePropsPanel1, java.awt.BorderLayout.PAGE_START);
 
@@ -1458,6 +1493,8 @@ private void chkBoxEnableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
   private javax.swing.JPanel vehicleBahaviourPanel;
   private javax.swing.JLabel vehicleIpAddressLbl1;
   private javax.swing.JTextField vehicleIpAddressTxt1;
+  private javax.swing.JLabel vehiclePortLbl1;
+  private javax.swing.JTextField vehiclePortTxt1;
   private javax.swing.JPanel vehiclePropsPanel;
   private javax.swing.JPanel vehiclePropsPanel1;
   private javax.swing.JPanel vehicleStatePanel;

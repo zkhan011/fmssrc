@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.util.eventsystem.SynchronousEventHubTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-31T07:07:04" hostname="DGR-ZISHAN" time="0.071">
+  <properties/>
+  <testcase name="shouldNotDeliverToUnregisteredListener" classname="org.opentcs.util.eventsystem.SynchronousEventHubTest" time="0.035"/>
+  <testcase name="shouldDeliverToRegisteredListener" classname="org.opentcs.util.eventsystem.SynchronousEventHubTest" time="0.004"/>
+  <testcase name="testAcceptingListener" classname="org.opentcs.util.eventsystem.SynchronousEventHubTest" time="0.031"/>
+  <testcase name="testRefusingListener" classname="org.opentcs.util.eventsystem.SynchronousEventHubTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.8">
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\test\java\org\opentcs\kernelcontrolcenter\KernelControlCenterApplicationTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="28" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+</checkstyle>

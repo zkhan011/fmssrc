@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.guing.storage.ModelValidatorTest" tests="83" skipped="0" failures="0" errors="0" timestamp="2019-01-31T07:07:28" hostname="DGR-ZISHAN" time="0.897">
+  <properties/>
+  <testcase name="testLocationInvalidType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.243"/>
+  <testcase name="testVehicleInvalidNextPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.307"/>
+  <testcase name="testVehicleMissingLength" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.005"/>
+  <testcase name="testVehicleMissingLoaded" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.005"/>
+  <testcase name="testPathInvalidLength" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.086"/>
+  <testcase name="testPathInvalidConnType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testVehicleMissingProcState" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testPathMissingMaxVelocity" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPathMissingEndPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testLinkMissingStartPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.047"/>
+  <testcase name="testPointInvalidXPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.006"/>
+  <testcase name="testLocationMissingOrientationAngle" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleMissingEnergyLevelCritical" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPointMissingType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleValidWithNullPoints" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testVehicleValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testLinkValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPathInvalidThreeControlPoints" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.008"/>
+  <testcase name="testPointInvalidModelYPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testLinkInvalidEndPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPointMissingModelXPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testPointMissingYPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathInvalidTwoControlPoints" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.005"/>
+  <testcase name="testLinkInvalidStartPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPointNegativeOrientationAngle" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathInvalidRoutingCost" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testLocationMissingModelPositionX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingModelPositionY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationTypeValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPathMissingMaxReverseVelocity" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleInvalidEnergyState" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.004"/>
+  <testcase name="testLayoutMissingScaleX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.024"/>
+  <testcase name="testLayoutMissingScaleY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLocationValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingPositionX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingPositionY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleInvalidProcState" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="shouldInvalidateWhenEmptyName" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testVehicleInvalidInitialAndCurrentPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathMissingConnType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathNegativeLength" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testLayoutInvalidScaleX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLayoutInvalidScaleY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPathMissingStartPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingLabelOffsetX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationMissingLabelOffsetY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathInvalidEndPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPointEmpty" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPointValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="shouldInvalidateIfExists" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testVehicleMissingPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleMissingState" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testVehicleMissingNextPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPathMissingRoutingCost" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPointInvalidType" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="shouldInvalidateIfNull" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPointInvalidModelXPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPointMissingXPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPointInvalidYPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testVehicleMissingEnergyLevel" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testVehicleMissingEnergyState" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLinkMissingEndPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationInvalidModelPositionX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationInvalidModelPositionY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLayoutEmpty" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLayoutValid" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.0"/>
+  <testcase name="testPathInvalidStartPoint" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPathMissingControlPoints" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPathInvalidMaxVelocity" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.003"/>
+  <testcase name="testPointMissingModelYPosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testVehicleMissingOrientationAngle" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testVehicleMissingPrecisePosition" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPointInvalidOrientationAngle" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testVehicleMissingEnergyLevelGood" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testLocationInvalidPositionX" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLocationInvalidPositionY" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testPathInvalidMaxReverseVelocity" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathMissingLength" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPathMissingLocked" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.002"/>
+  <testcase name="testPointMissingOrientationAngle" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.001"/>
+  <testcase name="testLocationTypeMissingOperations" classname="org.opentcs.guing.storage.ModelValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: Invalid type of location "Ladestation" - not found.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Next point "Point-002" is invalid.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Vehicle length does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Loaded property does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Processing state does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path max velocity does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: End component is null.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Location-001: Start component is null.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The x value of the point position does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The orientation angle for the label does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Energy level critical does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: Point type property does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Invalid path control points for bezier curve: "".
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The y value of the model position does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Location-001: End component "Location-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The x value of the model position does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The y value of the point position does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Invalid path control points for bezier curve: "".
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Location-001: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('-5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The x value of the model position does not exist.
+Jan 31, 2019 11:07:28 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The y value of the model position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path max reverse velocity does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Unknown energy state: "WrongEntry".
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: VLayout-001: ScaleX property does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: VLayout-001: ScaleY property does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The x value of the location position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The y value of the location position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The location type is null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Unknown processing state: WrongEntry.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: : Invalid name "".
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Current point "Point-001" is invalid.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePath
+WARNING: Point-001 --- Point-002: Length property is 0.0 but has to be > 0. Setting it to 1.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path connection type does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: VLayout-001: ScaleX property is not a valid double: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: VLayout-001: ScaleY property is not a valid double: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Start component is null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The x value of the location label offset does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The y value of the location label offset does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: Vehicle orientation angle does not exist or null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: Component name "Point-001" used multiple times.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Current point does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: State property does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Next point does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path routing cost does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: Invalid type of point "abc".
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: The model component to validate is null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: The system model is null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The x value of the model position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The x value of the point position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The y value of the point position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Energy level does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Energy state does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Location-001: End component is null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The x value of the model position is not an integer: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The y value of the model position is not an integer: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: VLayout-001: ScaleX property does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path control points do not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('5') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: The y value of the model position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Orientation angle does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Precise position does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator validatePoint
+WARNING: Point-001: Orientation angle property ('abc') is not a number. Setting it to 0.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Vehicle-001: Energy level good does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The x value of the location position is not an integer: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Location-001: The y value of the location position is not an integer: abc.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Path length does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: Start component "Point-001" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: null: End component "Point-002" does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001 --- Point-002: Locked property does not exist.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Point-001: Vehicle orientation angle does not exist or null.
+Jan 31, 2019 11:07:29 AM org.opentcs.guing.storage.ModelValidator errorOccurred
+INFO: Ladestation: Allowed operations does not exist.
+]]></system-err>
+</testsuite>

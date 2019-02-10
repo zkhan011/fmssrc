@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.opentcs.kernel.extensions.controlcenter.vehicles.html">org.opentcs.kernel.extensions.controlcenter.vehicles</a> &gt; AttachmentManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.058s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shoudAutoAttachAdapterToVehicle</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldAoutoAttachToFirstAvailableAdapter</td>
+<td>0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldAttachAdapterToVehicle</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldDetachAdapterFromVehicle</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotAttachUnknownVehicle</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager autoAttachAdapterToVehicle
+WARNING: Couldn't attach preferred adapter org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest$SimpleCommAdapterFactory to Vehicle2.  Attaching first available adapter.
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle1, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle2, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager autoAttachAdapterToVehicle
+WARNING: Couldn't attach preferred adapter org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest$SimpleCommAdapterFactory to Vehicle2.  Attaching first available adapter.
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle1, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle2, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager autoAttachAdapterToVehicle
+WARNING: Couldn't attach preferred adapter org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest$SimpleCommAdapterFactory to Vehicle2.  Attaching first available adapter.
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle1, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle2, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager attachAdapterToVehicle
+WARNING: No vehicle entry found for 'UnknownVehicle'. Entries: org.opentcs.kernel.extensions.controlcenter.vehicles.VehicleEntryPool@1ae62971
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager autoAttachAdapterToVehicle
+WARNING: Couldn't attach preferred adapter org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest$SimpleCommAdapterFactory to Vehicle2.  Attaching first available adapter.
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle1, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle2, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManager autoAttachAdapterToVehicle
+WARNING: Couldn't attach preferred adapter org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest$SimpleCommAdapterFactory to Vehicle2.  Attaching first available adapter.
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle1, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.controlcenter.vehicles.AttachmentManagerTest setUp
+INFO: Vehicle{name=Vehicle2, ipaddress=127.0.0.1, procState=UNAVAILABLE, integrationLevel=TO_BE_UTILIZED, state=UNKNOWN, energyLevel=100, currentPosition=null, precisePosition=null, orientationAngle=NaN, nextPosition=null, loadHandlingDevices=[], length=1000, adapterState=UNKNOWN, transportOrder=null, routeProgressIndex=-1, orderSequence=null, energyLevelGood=90, energyLevelCritical=30, maxVelocity=1000, maxReverseVelocity=1000, rechargeOperation=CHARGE, processableCategories=[-]}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.5</a> at Jan 31, 2019 12:14:29 PM</p>
+</div>
+</div>
+</body>
+</html>

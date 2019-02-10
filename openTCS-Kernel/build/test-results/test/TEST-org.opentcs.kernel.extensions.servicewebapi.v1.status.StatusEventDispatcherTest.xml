@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.kernel.extensions.servicewebapi.v1.status.StatusEventDispatcherTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-31T08:14:26" hostname="DGR-ZISHAN" time="0.01">
+  <properties/>
+  <testcase name="returnEmptyListIfThereWereNoEvents" classname="org.opentcs.kernel.extensions.servicewebapi.v1.status.StatusEventDispatcherTest" time="0.005"/>
+  <testcase name="respectConfiguredCapacity" classname="org.opentcs.kernel.extensions.servicewebapi.v1.status.StatusEventDispatcherTest" time="0.004"/>
+  <testcase name="keepAllEventsIfLessThanCapacity" classname="org.opentcs.kernel.extensions.servicewebapi.v1.status.StatusEventDispatcherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-01-31T08:14:28" hostname="DGR-ZISHAN" time="0.102">
+  <properties/>
+  <testcase name="shouldForwardLoadHandlingDevicesChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.087"/>
+  <testcase name="shouldHaveIdempotentEnabledState" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldForwardVehicleStateChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldNotAcceptMultipleDriveOrders" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.003"/>
+  <testcase name="shouldForwardEnergyLevelChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldForwardPrecisePositionChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldFowardPositionChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldForwardEventToBus" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.002"/>
+  <testcase name="shouldForwardAngleChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <testcase name="shouldForwardAdapterStateChangeToKernel" classname="org.opentcs.kernel.vehicles.DefaultVehicleControllerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

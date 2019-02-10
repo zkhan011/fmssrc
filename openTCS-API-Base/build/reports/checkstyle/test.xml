@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.8">
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\access\rmi\RemoteKernelTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="24" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+<error line="54" severity="warning" message="Line is longer than 100 characters (found 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\access\rmi\services\RemoteServicesTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="31" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\data\model\ModelSerializationTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="21" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="54" severity="warning" message="Line is longer than 100 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="63" severity="warning" message="Line is longer than 100 characters (found 110)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="72" severity="warning" message="Line is longer than 100 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="92" severity="warning" message="Line is longer than 100 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\data\order\OrderSerializationTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="24" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="38" severity="warning" message="Line is longer than 100 characters (found 114)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="50" severity="warning" message="Line is longer than 100 characters (found 112)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\util\AssertionsTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="12" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\util\configuration\ConfigurationItemTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="19" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\util\configuration\ConfigurationStoreTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="22" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\test\java\org\opentcs\util\eventsystem\SynchronousEventHubTest.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="23" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+<error line="26" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+</file>
+</checkstyle>

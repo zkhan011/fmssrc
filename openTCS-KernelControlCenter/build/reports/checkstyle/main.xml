@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.8">
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\AboutDialog.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="12" column="8" severity="warning" message="Unused import - org.opentcs.util.Environment." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="28" column="44" severity="warning" message="Expected @param tag for &apos;modal&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\ControlCenterInfoHandler.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="49" column="3" severity="warning" message="Static variable definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\ControlCenterInfoHandlerFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\KernelControlCenter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="68" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="134" column="10" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="141" severity="warning" message="Line is longer than 100 characters (found 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="142" severity="warning" message="Line is longer than 100 characters (found 105)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="212" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\KernelControlCenterApplication.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\exchange\DefaultServiceCallWrapper.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="91" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="114" column="3" severity="warning" message="Return count is 5 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\exchange\KernelEventFetcher.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="205" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\exchange\SslConfiguration.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\util\KernelControlCenterConfiguration.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\AdapterFactoryCellRenderer.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\CommAdapterComboBox.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="38" column="3" severity="warning" message="Return count is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\CommandListCellRenderer.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\DetailPanel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="269" severity="warning" message="Line is longer than 100 characters (found 111)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="272" severity="warning" message="Line is longer than 100 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="275" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="335" severity="warning" message="Line is longer than 100 characters (found 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="336" severity="warning" message="Line is longer than 100 characters (found 119)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\DriverGUI.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="68" column="32" severity="error" message="Name &apos;BUNDLE&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="121" column="3" severity="warning" message="Return count is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="133" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="206" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="218" column="46" severity="warning" message="Return count is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="243" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="271" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="285" severity="warning" message="Line is longer than 100 characters (found 114)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="295" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="321" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="345" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="367" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="668" severity="warning" message="Line is longer than 100 characters (found 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="674" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+<error line="674" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="676" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="677" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\LocalVehicleEntry.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="100" column="10" severity="info" message="Redundant &apos;static&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\LocalVehicleEntryPool.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="83" column="3" severity="warning" message="Return count is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="94" severity="warning" message="Line is longer than 100 characters (found 116)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="97" severity="warning" message="Line is longer than 100 characters (found 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="99" severity="warning" message="Line is longer than 100 characters (found 114)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="104" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="132" column="3" severity="warning" message="Return count is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\LogTableModel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="78" column="3" severity="warning" message="Return count is 4 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\SingleCellEditor.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\VehicleCommAdapterFactoryTableCellRenderer.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\VehicleTableModel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="93" column="3" severity="warning" message="Static variable definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="97" column="3" severity="warning" message="Static variable definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="171" column="9" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="183" column="3" severity="warning" message="Return count is 7 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="224" column="3" severity="warning" message="Return count is 4 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="233" severity="warning" message="Line is longer than 100 characters (found 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="249" column="3" severity="warning" message="Return count is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-KernelControlCenter\src\main\java\org\opentcs\kernelcontrolcenter\vehicles\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+</checkstyle>

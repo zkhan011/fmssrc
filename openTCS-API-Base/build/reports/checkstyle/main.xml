@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.8">
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\ConfigurationItemTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\CredentialsException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\Kernel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="23" column="8" severity="warning" message="Unused import - org.opentcs.components.kernel.services.NotificationService." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="28" column="8" severity="warning" message="Unused import - org.opentcs.components.kernel.services.TransportOrderService." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="29" column="8" severity="warning" message="Unused import - org.opentcs.components.kernel.services.VehicleService." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="1287" severity="warning" message="Line is longer than 100 characters (found 128)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="1686" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="1696" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="1706" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\KernelException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\KernelRuntimeException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\KernelServicePortal.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\KernelStateTransitionEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\LocalKernel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="17" column="8" severity="warning" message="Unused import - org.opentcs.components.kernel.services.InternalTransportOrderService." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="18" column="8" severity="warning" message="Unused import - org.opentcs.components.kernel.services.InternalVehicleService." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="460" severity="warning" message="Line is longer than 100 characters (found 154)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="483" severity="warning" message="Line is longer than 100 characters (found 154)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="503" severity="warning" message="Line is longer than 100 characters (found 154)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\ModelTransitionEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\NotificationPublicationEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SchedulerAllocationState.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SharedKernelClient.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="21" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SharedKernelProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SharedKernelServicePortal.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="20" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SharedKernelServicePortalProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\SslParameterSet.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\TCSKernelStateEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\TCSModelTransitionEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\TCSNotificationEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\TravelCosts.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\UnsupportedKernelOpException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\Availability.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\Queries.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\Query.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\QueryAvailableScriptFiles.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\QueryRecoveryStatus.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\QueryRoutingInfo.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\QuerySchedulerAllocations.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\QueryTopologyInfo.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\queries\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\CallPermissions.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\ClientID.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\DynamicRemoteKernelProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="41" severity="warning" message="Line is longer than 100 characters (found 173)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="96" severity="warning" message="Line is longer than 100 characters (found 129)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="136" severity="warning" message="Line is longer than 100 characters (found 129)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="170" severity="warning" message="Line is longer than 100 characters (found 129)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\KernelProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\KernelProxyBuilder.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="43" severity="warning" message="Line is longer than 100 characters (found 124)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="78" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="197" severity="warning" message="Line is longer than 100 characters (found 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="211" severity="warning" message="Line is longer than 100 characters (found 109)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\KernelServicePortalBuilder.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="144" column="14" severity="warning" message="Expected @throws tag for &apos;ServiceUnavailableException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\KernelUnavailableException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\ProxyInvocationHandler.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="66" severity="warning" message="Line is longer than 100 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="78" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="116" severity="warning" message="Line is longer than 100 characters (found 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="121" column="3" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="127" severity="warning" message="Line is longer than 100 characters (found 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="259" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="388" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\RemoteKernel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\RemoteKernelConnection.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="50" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\RemoteMethods.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\TCSProxyStateEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\AnonSslClientSocketFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="24" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\AnonSslServerSocketFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\AnonSslSocketFactoryProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="33" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\NullSocketFactoryProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="21" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\SecureSocketFactoryProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\SocketFactoryProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\SslSocketFactoryProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\factories\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\AbstractRemoteServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="109" column="12" severity="warning" message="Unnecessary parentheses around return value." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="130" column="3" severity="warning" message="Return count is 4 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\KernelStateEventListener.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="10" column="8" severity="warning" message="Unused import - org.opentcs.access.Kernel." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RegistrationName.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="15" severity="info" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteDispatcherService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteDispatcherServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="24" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteKernelServicePortal.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteKernelServicePortalProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="149" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="261" severity="warning" message="Line is longer than 100 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteNotificationService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteNotificationServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="23" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemotePlantModelService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemotePlantModelServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="24" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteRouterService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="36" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="39" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteRouterServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="23" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteSchedulerService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="35" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteSchedulerServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="21" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteTCSObjectService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteTCSObjectServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteTransportOrderService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteTransportOrderServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="27" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteVehicleService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\RemoteVehicleServiceProxy.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="28" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\ServiceListener.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\rmi\services\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\CreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\BlockCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\GroupCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\LocationCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="59" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\LocationTypeCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\ModelLayoutElementCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="150" severity="warning" message="Line is longer than 100 characters (found 110)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\PathCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="76" column="11" severity="error" message="More than 7 parameters (found 9)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="328" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\PlantModelCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="77" column="11" severity="error" message="More than 7 parameters (found 11)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="246" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="257" severity="warning" message="Line is longer than 100 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="634" severity="warning" message="Line is longer than 100 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="645" severity="warning" message="Line is longer than 100 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\PointCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="162" severity="warning" message="Line is longer than 100 characters (found 109)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\ShapeLayoutElementCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\StaticRouteCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\VehicleCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="23" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="50" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="61" column="11" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\VisualLayoutCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="224" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="264" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\model\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\order\DestinationCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="75" severity="warning" message="Line is longer than 100 characters (found 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="154" severity="warning" message="Line is longer than 100 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="188" severity="warning" message="Line is longer than 100 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\order\OrderSequenceCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="15" severity="info" message="Using the &apos;.*&apos; form of import should be avoided - org.opentcs.access.to.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\order\TransportOrderCreationTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="22" severity="info" message="Using the &apos;.*&apos; form of import should be avoided - org.opentcs.access.to.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="82" column="11" severity="error" message="More than 7 parameters (found 9)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="205" severity="warning" message="Line is longer than 100 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="216" severity="warning" message="Line is longer than 100 characters (found 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\order\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\access\to\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\Lifecycle.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\ControlCenterPanel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\Dispatcher.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\KernelExtension.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\OrderSequenceCleanupApproval.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\ParkingPositionSupplier.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\RechargePositionSupplier.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\RecoveryEvaluator.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\ResourceAllocationException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\Router.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\Scheduler.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\TransportOrderCleanupApproval.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\DispatcherService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\InternalPlantModelService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\InternalTransportOrderService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\InternalVehicleService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\NotificationService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\PlantModelService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\RouterService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\SchedulerService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\ServiceUnavailableException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\TCSObjectService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\TransportOrderService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\VehicleService.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\kernel\services\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\LocationTheme.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\OrderCategorySuggestions.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\PlantModelExporter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\PlantModelImporter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\PluggablePanel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\PluggablePanelFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\PropertySuggestions.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\VehicleTheme.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\components\plantoverview\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\ApplicationEventBus.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\ApplicationHome.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\ConfigurationBindingProvider.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\ServiceCallWrapper.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\controlcenter\ActiveInModellingMode.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\controlcenter\ActiveInOperatingMode.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\controlcenter\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\ActiveInAllModes.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\ActiveInModellingMode.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\ActiveInOperatingMode.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Type Javadoc comment is missing an @author tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\CentralEventHub.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\KernelExecutor.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\kernel\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\customizations\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\ObjectExistsException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\ObjectPropConstants.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="25" severity="info" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\ObjectUnknownException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\TCSObject.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\TCSObjectEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="125" column="10" severity="info" message="Redundant &apos;static&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\TCSObjectEventFilter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\TCSObjectReference.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="13" column="8" severity="warning" message="Unused import - org.opentcs.data.order.DriveOrder." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Block.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Group.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Location.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\LocationType.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Path.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="105" column="11" severity="error" message="More than 7 parameters (found 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Point.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="102" column="11" severity="error" message="More than 7 parameters (found 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\StaticRoute.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\TCSResource.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\TCSResourceReference.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Triple.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\Vehicle.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="219" column="11" severity="error" message="More than 7 parameters (found 24)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="1667" column="10" severity="info" message="Redundant &apos;static&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ElementPropKeys.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="18" severity="info" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ImageData.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ImageLayoutElement.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\LayoutElement.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\LocationRepresentation.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ModelLayoutElement.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ShapeLayoutElement.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\ViewBookmark.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\VisualLayout.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="99" column="11" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\model\visualization\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\notification\UserNotification.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\notification\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\DriveOrder.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="233" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="288" severity="warning" message="Line is longer than 100 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\OrderConstants.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="15" severity="info" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\OrderSequence.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="132" column="11" severity="error" message="More than 7 parameters (found 11)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\Rejection.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\Route.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\TransportOrder.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="70" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="73" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="195" column="11" severity="error" message="More than 7 parameters (found 16)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\order\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\user\UserAccount.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\user\UserExistsException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\user\UserPermission.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\user\UserUnknownException.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\data\user\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\AdapterCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\BasicVehicleCommAdapter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="349" severity="warning" message="Line is longer than 100 characters (found 105)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\DefaultVehicleCommAdapterDescription.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\LoadHandlingDevice.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\MovementCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="16" column="8" severity="warning" message="Unused import - org.opentcs.data.model.Triple." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="136" column="10" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\SimVehicleCommAdapter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleCommAdapter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="192" column="3" severity="info" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleCommAdapterDescription.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleCommAdapterEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleCommAdapterFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleCommAdapterPanel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleController.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleControllerPool.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\VehicleProcessModel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="64" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="66" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="68" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="70" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="72" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="74" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="76" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="78" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="501" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="542" column="17" severity="info" message="&apos;abstract&apos; modifier out of order with the JLS suggestions." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\PublishEventCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\ResetPositionCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="18" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetEnergyLevelCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetLoadHandlingDevicesCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetOrienatationAngleCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetPercisePositionCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetPositionCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetStateCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\SetVehiclePropertyCommand.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\commands\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\AttachmentEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\AttachmentInformation.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="18" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\CommAdapterEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\ProcessModelEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\VehicleCommAdapterPanel.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\VehicleCommAdapterPanelFactory.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\VehicleProcessModelTO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="28" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\management\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\messages\ClearError.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\messages\SetSpeedMultiplier.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\messages\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\drivers\vehicle\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\Assertions.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\CallWrapper.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\ClassMatcher.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\CyclicTask.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\Enums.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\ExplainedBoolean.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\annotations\ScheduledApiChange.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\annotations\ScheduledApiChanges.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\annotations\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\Configuration.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ConfigurationDataType.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ConfigurationEntry.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ConfigurationItem.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ConfigurationPrefix.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ConfigurationStore.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\InMemoryConfiguration.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="19" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraint.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintBoolean.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintByte.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintDouble.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintEnum.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintFloat.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintInteger.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintLong.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintShort.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\ItemConstraintString.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\configuration\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\event\EventBus.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="10" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\event\EventHandler.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="10" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\event\EventSource.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="11" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\event\SimpleEventBus.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="16" severity="warning" message="Javadoc has empty description section." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="20" severity="info" message="Class should define a constructor." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"/>
+<error line="39" column="5" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\event\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\AcceptingTCSEventFilter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\AsynchronousEventHub.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="124" column="13" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\Event.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\EventFilter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="18" severity="warning" message="Line is longer than 100 characters (found 137)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\EventHub.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\EventListener.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\EventSource.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\RefusingTCSEventFilter.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\SynchronousEventHub.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="50" column="7" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\TCSEvent.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\eventsystem\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\fmssrc\openTCS-API-Base\src\main\java\org\opentcs\util\package-info.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+</checkstyle>

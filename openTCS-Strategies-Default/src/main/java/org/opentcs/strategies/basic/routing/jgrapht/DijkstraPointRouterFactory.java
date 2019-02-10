@@ -11,6 +11,7 @@ import javax.annotation.Nonnull;
 import javax.inject.Inject;
 import org.jgrapht.Graph;
 import org.jgrapht.alg.interfaces.ShortestPathAlgorithm;
+import org.jgrapht.alg.shortestpath.BidirectionalDijkstraShortestPath;
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 import org.opentcs.components.kernel.services.TCSObjectService;
 import org.opentcs.strategies.basic.routing.PointRouter;
@@ -38,7 +39,7 @@ public class DijkstraPointRouterFactory
   @Override
   protected ShortestPathAlgorithm<String, ModelEdge> createShortestPathAlgorithm(
       Graph<String, ModelEdge> graph) {
-    return new DijkstraShortestPath<>(graph);
+    return new BidirectionalDijkstraShortestPath<>(graph);
   }
 
 }

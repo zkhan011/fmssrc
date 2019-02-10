@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.guing.exchange.ApplicationKernelProviderTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2019-01-31T07:07:27" hostname="DGR-ZISHAN" time="0.0">
+  <properties/>
+  <testcase name="shouldConnectOnClientRegistration" classname="org.opentcs.guing.exchange.ApplicationKernelProviderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="shouldNotConnectIfAlreadyConnected" classname="org.opentcs.guing.exchange.ApplicationKernelProviderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

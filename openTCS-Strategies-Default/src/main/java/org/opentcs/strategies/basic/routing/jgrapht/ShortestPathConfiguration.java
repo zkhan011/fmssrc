@@ -28,6 +28,7 @@ public interface ShortestPathConfiguration {
       type = "Strings",
       description = {
         "The routing algorithm to be used. Valid values:",
+         "'ASTAR': Routes are computed using Dijkstra's algorithm.",
         "'DIJKSTRA': Routes are computed using Dijkstra's algorithm.",
         "'BELLMAN_FORD': Routes are computed using the Bellman-Ford algorithm.",
         "'FLOYD_WARSHALL': Routes are computed using the Floyd-Warshall algorithm."})
@@ -45,6 +46,7 @@ public interface ShortestPathConfiguration {
 
   enum Algorithm {
     DIJKSTRA(false),
+    ASTAR(false),
     BELLMAN_FORD(true),
     FLOYD_WARSHALL(false);
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.opentcs.kernel.extensions.xmlhost.orders.binding.TCSOrderSetTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.opentcs.kernel.extensions.xmlhost.orders.binding.TCSOrderSetTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.opentcs.kernel.extensions.xmlhost.orders.binding.html">org.opentcs.kernel.extensions.xmlhost.orders.binding</a> &gt; TCSOrderSetTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.112s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldMarshallAndUnmarshall</td>
+<td>0.090s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldOutputSampleOrder</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldOutputSampleScriptOrder</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.xmlhost.orders.binding.TCSOrderSetTest shouldMarshallAndUnmarshall
+INFO: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;tcsOrderSet&gt;
+    &lt;order xsi:type=&quot;transport&quot; deadline=&quot;2019-01-31T12:14:26.169+04:00&quot; intendedVehicle=&quot;Vehicle-01&quot; id=&quot;TransportOrder-01&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+        &lt;destination locationName=&quot;Location 1&quot; operation=&quot;Load&quot;&gt;
+            &lt;property key=&quot;Key 1&quot; value=&quot;Value 1&quot;/&gt;
+            &lt;property key=&quot;Key 2&quot; value=&quot;Value 2&quot;/&gt;
+        &lt;/destination&gt;
+        &lt;destination locationName=&quot;Location 2&quot; operation=&quot;Unload&quot;&gt;
+            &lt;property key=&quot;Key 1&quot; value=&quot;Value 1&quot;/&gt;
+            &lt;property key=&quot;Key 2&quot; value=&quot;Value 2&quot;/&gt;
+        &lt;/destination&gt;
+    &lt;/order&gt;
+    &lt;order xsi:type=&quot;transport&quot; deadline=&quot;2019-01-31T12:14:26.170+04:00&quot; intendedVehicle=&quot;Vehicle-02&quot; id=&quot;TransportOrder-02&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+        &lt;destination locationName=&quot;Location 3&quot; operation=&quot;Load&quot;&gt;
+            &lt;property key=&quot;Key 1&quot; value=&quot;Value 1&quot;/&gt;
+            &lt;property key=&quot;Key 2&quot; value=&quot;Value 2&quot;/&gt;
+        &lt;/destination&gt;
+        &lt;destination locationName=&quot;Location 4&quot; operation=&quot;Unload&quot;&gt;
+            &lt;property key=&quot;Key 1&quot; value=&quot;Value 1&quot;/&gt;
+            &lt;property key=&quot;Key 2&quot; value=&quot;Value 2&quot;/&gt;
+        &lt;/destination&gt;
+    &lt;/order&gt;
+&lt;/tcsOrderSet&gt;
+
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.xmlhost.orders.binding.TCSOrderSetTest shouldOutputSampleOrder
+INFO: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;tcsOrderSet&gt;
+    &lt;order xsi:type=&quot;transport&quot; deadline=&quot;2019-01-31T12:14:26.259+04:00&quot; intendedVehicle=&quot;Vehicle-01&quot; id=&quot;TransportOrder-01&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+        &lt;destination locationName=&quot;Storage 01&quot; operation=&quot;Load cargo&quot;/&gt;
+        &lt;destination locationName=&quot;Storage 02&quot; operation=&quot;Unoad cargo&quot;/&gt;
+        &lt;property key=&quot;waitBefore&quot; value=&quot;Unload&quot;/&gt;
+    &lt;/order&gt;
+    &lt;order xsi:type=&quot;transport&quot; id=&quot;TransportOrder-02&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+        &lt;destination locationName=&quot;Working station 01&quot; operation=&quot;Drill&quot;&gt;
+            &lt;property key=&quot;drillSize&quot; value=&quot;3&quot;/&gt;
+        &lt;/destination&gt;
+        &lt;destination locationName=&quot;Working station 02&quot; operation=&quot;Drill&quot;&gt;
+            &lt;property key=&quot;drillSize&quot; value=&quot;8&quot;/&gt;
+        &lt;/destination&gt;
+        &lt;destination locationName=&quot;Working station 03&quot; operation=&quot;Cut&quot;/&gt;
+    &lt;/order&gt;
+&lt;/tcsOrderSet&gt;
+
+Jan 31, 2019 12:14:26 PM org.opentcs.kernel.extensions.xmlhost.orders.binding.TCSOrderSetTest shouldOutputSampleScriptOrder
+INFO: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;tcsOrderSet&gt;
+    &lt;order xsi:type=&quot;transportScript&quot; fileName=&quot;test.tcs&quot; id=&quot;test.tcs&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;
+&lt;/tcsOrderSet&gt;
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.5</a> at Jan 31, 2019 12:14:29 PM</p>
+</div>
+</div>
+</body>
+</html>

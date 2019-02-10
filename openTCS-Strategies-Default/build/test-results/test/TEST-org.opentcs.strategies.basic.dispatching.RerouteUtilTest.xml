@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-31T07:07:32" hostname="DGR-ZISHAN" time="0.063">
+  <properties/>
+  <testcase name="shouldMergeDriveOrders" classname="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" time="0.036"/>
+  <testcase name="shouldReturnTrueForRoutesEqual" classname="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" time="0.0"/>
+  <testcase name="shouldReturnFalseForCostsNotEqual" classname="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" time="0.001"/>
+  <testcase name="shouldReturnFutureSteps" classname="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" time="0.025"/>
+  <testcase name="shouldReturnFalseForStepsNotEqual" classname="org.opentcs.strategies.basic.dispatching.RerouteUtilTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

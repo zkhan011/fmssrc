@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-31T07:07:32" hostname="DGR-ZISHAN" time="0.022">
+  <properties/>
+  <testcase name="createGraphWithFourPointsThreeUnidirectionalAndOneBidirectionalPaths" classname="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" time="0.018"/>
+  <testcase name="createGraphWithFourPointsAndNoPath" classname="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" time="0.001"/>
+  <testcase name="createGraphWithFourPointsAndOneBidirectionalPath" classname="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" time="0.001"/>
+  <testcase name="createEmptyGraph" classname="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" time="0.001"/>
+  <testcase name="createGraphWithFourPointsAndOneUnidirectionalPath" classname="org.opentcs.strategies.basic.routing.jgrapht.DefaultModelGraphMapperTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

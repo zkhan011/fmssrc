@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opentcs.util.UniqueStringGeneratorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-31T07:07:08" hostname="DGR-ZISHAN" time="0.007">
+  <properties/>
+  <testcase name="shouldProvideConfiguredPatterns" classname="org.opentcs.util.UniqueStringGeneratorTest" time="0.005"/>
+  <testcase name="testNullPrefix" classname="org.opentcs.util.UniqueStringGeneratorTest" time="0.0"/>
+  <testcase name="testRepeatedGenerationWithAddition" classname="org.opentcs.util.UniqueStringGeneratorTest" time="0.001"/>
+  <testcase name="testRepeatedGenerationWithoutModification" classname="org.opentcs.util.UniqueStringGeneratorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
